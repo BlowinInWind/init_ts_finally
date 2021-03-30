@@ -1,0 +1,7 @@
+node-modules/**/*
+dist/**/*
+config/**/*
+/src/mock/**
+# /src/__tests__/**
+jestconfig.js
+postcss.config.js

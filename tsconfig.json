@@ -1,0 +1,89 @@
+{
+    "compilerOptions": {
+        /* 基本选项 */
+        "target": "esnext", // 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'
+        "module": "commonjs", // 指定使用模块: 'commonjs', 'amd', 'system', 'umd' or 'es2015'
+        /* 指定要包含在编译中的库文件——引用类库——即申明文件，如果输出的模块方式是 es5，就会默认引入 "dom","es5","scripthost" 。如果在 TS 中想要使用一些 ES6 以上版本的语法，就需要引入相关的类库 */
+        "lib": [
+            "es5",
+            "es6",
+            "es7",
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost",
+            "es2015.promise",
+            "es2015",
+            "es2016",
+            "es2017",
+            "es2018",
+            "es2019",
+            "es2020"
+        ], // ts需要引入的类库
+        "allowJs": true, // todo 允许编译 javascript 文件 不想js报错就去掉
+        "checkJs": false, // todo 报告 javascript 文件中的错误
+        "jsx": "preserve", // 指定 jsx 代码的生成: 'preserve', 'react-native', or 'react'
+        /* react 模式下：直接将 JSX 编译成 JS，会生成 React.createElement 的形式，在使用前不需要再进行转换操作了，输出文件的扩展名为 .js */
+        /* preserve 模式下：不会将 JSX 编译成 JS，生成代码中会保留 JSX，以供后续的转换操作使用（比如：Babel）。 另外，输出文件会带有 .jsx 扩展名 */
+        /* react-native 模式下：相当于 preserve，它也保留了所有的 JSX，但是输出文件的扩展名是 .js */
+        // "declaration": true, // 生成相应的 '.d.ts' 文件
+        // "declarationDir": "", // 声明文件的路径
+        // "emitDeclarationOnly": false, // 只生成声明文件
+        // "sourceMap": true, // 生成相应的 '.map' 文件
+        "esModuleInterop": true, // 允许 export = xxx 导出 ，并使用 import xxx form "module-name" 导入
+        // "outFile": "./dist", // 将输出文件合并为一个文件
+        // "outDir": "./dist", // 指定输出目录
+        // "rootDir": "./",  // 用来控制输出目录结构 --outDir.
+        "removeComments": true, // 删除编译后的所有的注释
+        "noEmit": true, // 不生成输出文件
+        "importHelpers": true, // 从 tslib 导入辅助工具函数
+        "isolatedModules": true, // 将每个文件做为单独的模块 （与 'ts.transpileModule' 类似）.
+        "resolveJsonModule": true,
+        // "incremental": false, // 增量编译
+        // "diagnostics": false, // 打印诊断信息
+        // "tsBuildInfoFile": "", // 增量编译信息的文件位置
+
+        /* 严格的类型检查选项 */
+        "strict": false, // 启用所有严格类型检查选项
+        "strictFunctionTypes": false, // 不允许函数参数双向协变
+        "noImplicitAny": false, // 在表达式和声明上有隐含的 any类型时报错  //todo js文件编译的要用
+        "strictNullChecks": false, // 启用严格的 null 检查
+        "noImplicitThis": true, // 当 this 表达式值为 any 类型的时候，生成一个错误
+        "alwaysStrict": true, // 以严格模式检查每个模块，并在每个文件里加入 'use strict'
+
+        /* 额外的检查 */
+        "noUnusedLocals": false, // 有未使用的变量时，抛出错误
+        "noUnusedParameters": false, // 有未使用的参数时，抛出错误
+        "noImplicitReturns": false, // 并不是所有函数里的代码都有返回值时，抛出错误
+        "noFallthroughCasesInSwitch": false, // 报告 switch 语句的 fallthrough 错误。（即，不允许 switch 的 case 语句贯穿）
+
+        /* 模块解析选项 */
+        "moduleResolution": "node", // 选择模块解析策略： 'node' (Node.js) or 'classic' (TypeScript pre-1.6)
+        "baseUrl": "./", // 用于解析非相对模块名称的基目录
+        "paths": {
+            "@src/*": ["src/*"],
+            "@common/*": ["src/common/*"],
+            "@layout/*": ["src/layout/*"],
+            "@mocks/*": ["src/mocks/*"],
+            "@pages/*": ["src/pages/*"],
+            "@store/*": ["src/store/*"],
+            "@routes/*": ["src/routes/*"],
+            "@hooks/*": ["src/hooks/*"],
+            "@components/*": ["src/components/*"],
+            "@utils/*": ["src/utils/*"]
+        }, // 模块名到基于 baseUrl 的路径映射的列表
+        "rootDirs": [], // 根文件夹列表，其组合内容表示项目运行时的结构内容
+        "typeRoots": [], // 包含类型声明的文件列表
+        "types": ["node"], // 需要包含的类型声明文件名列表
+        "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入。
+
+        /* 其他选项 */
+        "experimentalDecorators": true, // 启用装饰器
+        "emitDecoratorMetadata": true, // 为装饰器提供元数据的支持
+
+        /* 当目标是ES5或ES3的时候提供对for-of、扩展运算符和解构赋值中对于迭代器的完整支持 */
+        "downlevelIteration": true
+    },
+    "include": ["**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules", "**/dist/**", "config", "**/*.test.ts", "**/*.js", "**/*.jsx"]
+}

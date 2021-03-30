@@ -1,0 +1,40 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+node_modules
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+/‘~
+# testing
+/coverage
+
+# production
+# *.zip
+
+# misc
+.DS_Store
+.env.local
+/.vscode
+.vscode
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.idea/BigData.DNDX.Front.iml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
+.cache
+jsconfig.json
+/coverage
+
+package-lock.json
+yarn.lock
+
