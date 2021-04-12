@@ -32,7 +32,7 @@ yarn-error.log*
 .idea/vcs.xml
 .idea/workspace.xml
 .cache
-jsconfig.json
+# jsconfig.json
 /coverage
 
 package-lock.json

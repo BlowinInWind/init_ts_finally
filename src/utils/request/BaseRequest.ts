@@ -5,13 +5,13 @@ import axios, {
     AxiosResponse,
     AxiosInstance,
     AxiosError
+    // AxiosPromise
 } from 'axios';
 import qs from 'qs';
-// import { createBrowserHistory } from 'history';
+import { createBrowserHistory } from 'history';
 import { clearLocal, getLocal } from '@utils/utils';
-// import { message } from 'antd';
 
-// const history = createBrowserHistory();
+const history = createBrowserHistory();
 
 // interface DefaultRequestOptions {
 //     headers: {
@@ -19,6 +19,11 @@ import { clearLocal, getLocal } from '@utils/utils';
 //     };
 //     [key: string]: {};
 // }
+
+// type AxiosReturnType<T> = T extends (...args: any[]) => AxiosPromise<infer R> ? R : any
+
+// 使用
+// type Resp = AxiosReturnType<Api>
 
 export interface ResponseInterface<T> {
     code: number;
@@ -92,14 +97,14 @@ class BaseRequest {
                     if (useResponse.code === 401) {
                         // 清楚缓存 这里先注释了吧
                         clearLocal();
-                        // const { pathname } = history.location;
+                        const { pathname } = history.location;
                         window.location.reload();
-                        // history.replace({
-                        //     pathname: '/',
-                        //     state: {
-                        //         redirect: pathname
-                        //     }
-                        // });
+                        history.replace({
+                            pathname: '/',
+                            state: {
+                                redirect: pathname
+                            }
+                        });
                     } else {
                         resolve(response);
                     }

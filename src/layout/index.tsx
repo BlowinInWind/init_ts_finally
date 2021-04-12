@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import Children from './Children';
 
 const Index: React.FC = props => {

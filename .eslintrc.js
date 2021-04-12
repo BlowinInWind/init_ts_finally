@@ -25,7 +25,7 @@ module.exports = {
         React: true
     },
 
-    // 环境，这里可以设置环来做区别判断
+    // 环境，这里可以设置来做区别判断
     env: {
         jest: true,
         browser: true,
@@ -74,7 +74,7 @@ module.exports = {
         'react/jsx-no-literals': 0, // 防止使用未包装的JSX字符串
         'react/jsx-no-undef': 1, // 在JSX中禁止未声明的变量
         'react/jsx-pascal-case': 0, // 为用户定义的JSX组件强制使用PascalCase
-        'react/jsx-sort-props': 0, // 强化props按字母排序
+        'react/jsx-sort-props': 2, // 强化props按字母排序
         'react/jsx-uses-react': 2, // 防止反应被错误地标记为未使用
         'react/jsx-uses-vars': 2, // 防止在JSX中使用的变量被错误地标记为未使用
         'react/no-danger': 0, // 防止使用危险的JSX属性
@@ -97,7 +97,7 @@ module.exports = {
         'react/jsx-one-expression-per-line': 0, // 必须分开
         'react/state-in-constructor': 0, // state是否必须在constructor里
         'react/button-has-type': 0, // button必须要类型
-        'no-use-before-define': 0,
+        'no-use-before-define': 0, // 定以前不使用
         'no-plusplus': [2, { allowForLoopAfterthoughts: true }], // 允许一元运算符++和循环--的后缀（最终表达式）for
         'prefer-destructuring': 0, // 必须使用结构赋值
         'react/jsx-filename-extension': [
@@ -107,7 +107,7 @@ module.exports = {
         'import/no-unresolved': 0,
         'import/extensions': 0,
         quotes: [2, 'single'], // 单引号
-        'no-console': 2, // 不禁用console
+        'no-console': process.env.NODE_ENV === 'development' ? 0 : 2, // 不禁用console
         'no-debugger': 2, // 禁用debugger
         'no-irregular-whitespace': 0, // 不规则的空白不允许
         'no-trailing-spaces': 1, // 一行结束后面有空格就发出警告
@@ -117,6 +117,7 @@ module.exports = {
         // "react/jsx-equals-spacing": 2, //在JSX属性中强制或禁止等号周围的空格
         'no-unreachable': 1, // 不能有无法执行的代码
         'no-mixed-spaces-and-tabs': 0, // 禁止混用tab和空格
+        'no-this-before-super': 0, // 在调用super()之前不能使用this或super
         'prefer-arrow-callback': 0, // 比较喜欢箭头回调
         'react/jsx-props-no-spreading': 0, // 是否允许{...props}
         'class-methods-use-this': 0, // class的方法中没有this 转成static

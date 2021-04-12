@@ -12,9 +12,8 @@ const renderRoutes = (routes: RouterConfig[]) => {
                     return (
                         <Route
                             key={route.key || i}
-                            path={route.path}
                             exact={route.exact}
-                            strict={route.strict}
+                            path={route.path}
                             render={props => {
                                 if (route.auth) {
                                     if (!localStorage.getItem('name')) {
@@ -49,6 +48,7 @@ const renderRoutes = (routes: RouterConfig[]) => {
                                     </>
                                 );
                             }}
+                            strict={route.strict}
                         ></Route>
                     );
                 })}

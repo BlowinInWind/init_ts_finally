@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction, CaseReducer } from '@reduxjs/toolkit';
 
 type State = number;
+
 const increment: CaseReducer<State, PayloadAction<number>> = (state, action) =>
     state + action.payload;
 

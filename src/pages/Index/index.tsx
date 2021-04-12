@@ -9,8 +9,6 @@ const Index = () => {
         setA(1);
     }, []);
 
-    // console.log('++++++++++++');
-
     return (
         <div>
             <Demo></Demo>
