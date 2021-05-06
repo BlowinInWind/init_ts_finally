@@ -5,7 +5,6 @@ const chalk = require('chalk');
 const portfinder = require('portfinder');
 const config = require('./config');
 const commonConfig = require('./webpack.config.common.js');
-const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const getLocalHostnameAndIp = require('./getLocalIp');
 
@@ -21,21 +20,30 @@ const devConfig = merge(commonConfig, {
         publicPath: '/'
     },
 
-    plugins: [new ReactRefreshWebpackPlugin()],
+    plugins: [
+        new ReactRefreshWebpackPlugin({
+            // overlay: false,
+            exclude: /node_modules/
+        })
+    ],
 
     devServer: {
         host: config.host,
         port: config.port,
         historyApiFallback: true,
         // 错误覆盖到界面上
-        // overlay: true,
+        overlay: false,
+        // overlay: {
+        //     warnings: false,
+        //     errors: true
+        // },
+        quiet: false, // 启用 quiet 后，除了初始启动信息之外的任何内容都不会被打印到控制台。这也意味着来自 webpack 的错误或警告在控制台不可见。
         compress: true,
         // 阻止所有这些消息显示
-        clientLogLevel: 'none',
+        clientLogLevel: 'silent',
         progress: false,
         hot: true,
         inline: true,
-        quiet: false, // 启用 quiet 后，除了初始启动信息之外的任何内容都不会被打印到控制台。这也意味着来自 webpack 的错误或警告在控制台不可见。
         // 默认浏览器
         open: true,
         // contentBase: 'dist',

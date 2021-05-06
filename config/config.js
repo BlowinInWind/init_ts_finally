@@ -5,8 +5,9 @@ const fs = require('fs');
 const os = require('os');
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
+const colors = require('./styles');
 
-const baseUrl = 'http://139.217.80.97:8981/';
+const baseUrl = 'http://test.gateway.heimaqf.cn';
 
 module.exports = {
     // 根的js
@@ -29,15 +30,17 @@ module.exports = {
 
     // 需要代理
     proxy: {
-        '/prod-api': {
+        '/dev-api': {
             target: baseUrl,
             changeOrigin: true,
-            pathRewrite: { '^/prod-api': '/prod-api' }
+            pathRewrite: { '^/dev-api': '/' }
         }
     },
 
     baseUrl: baseUrl,
     //node_modules
     appNodeModules: resolveApp('node_modules'),
-    tsConfig: resolveApp('tsconfig.json')
+    tsConfig: resolveApp('tsconfig.json'),
+    // 配色方案，可以根据assets找那个的variable进行配色的替换
+    styles: colors.styles
 };

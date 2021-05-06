@@ -173,7 +173,8 @@ const commonConfig = {
         new ForkTsCheckerWebpackPlugin({
             // 将async设为false，可以阻止Webpack的emit以等待类型检查器/linter，并向Webpack的编译添加错误。
             async: false,
-            formatter: typescriptFormatter
+            typescript: { memoryLimit: 4096 }
+            // formatter: typescriptFormatter
         }),
 
         // 将TypeScript类型检查错误以弹框提示
@@ -270,12 +271,6 @@ const commonConfig = {
 
     module: {
         rules: [
-            {
-                test: /\.m?js/,
-                resolve: {
-                    fullySpecified: false
-                }
-            },
             {
                 test: /\.(js|ts)x?$/,
                 use: [
