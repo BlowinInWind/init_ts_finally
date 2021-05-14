@@ -1,5 +1,10 @@
 import React, { useMemo } from 'react';
-import { useLocation, useHistory, useParams, useRouteMatch } from 'react-router-dom';
+import {
+    useLocation,
+    useHistory,
+    useParams,
+    useRouteMatch
+} from 'react-router-dom';
 import queryString from 'qs';
 
 const useRouter = () => {

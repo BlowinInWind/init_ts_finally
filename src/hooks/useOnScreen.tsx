@@ -8,7 +8,10 @@ import React, { useState, useEffect, MutableRefObject } from 'react';
  * @param {string} [rootMargin='0px']
  * @return {*}
  */
-const useOnScreen = <T extends Element>(ref: MutableRefObject<T>, rootMargin = '0px') => {
+const useOnScreen = <T extends Element>(
+    ref: MutableRefObject<T>,
+    rootMargin = '0px'
+) => {
     const [isIntersecting, setIntersecting] = useState<boolean>(false);
 
     useEffect(() => {

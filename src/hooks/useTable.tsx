@@ -66,7 +66,13 @@ interface PlayLoad {
     [key: string]: any;
 }
 
-export default ({ fun, deps = [], needPage = true, options, initRequest = false }: RequestInterface) => {
+export default ({
+    fun,
+    deps = [],
+    needPage = true,
+    options,
+    initRequest = false
+}: RequestInterface) => {
     const initState = useMemo(() => new UseTableInitState(), []);
     const requestRef = useRef(initRequest);
 

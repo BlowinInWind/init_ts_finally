@@ -41,7 +41,12 @@ interface ResInterface {
  * }
  * @return {*}  {ResInterface}
  */
-export default ({ fun, deps = [], initRequest = true, finishData }: RequestInterface): ResInterface => {
+export default ({
+    fun,
+    deps = [],
+    initRequest = true,
+    finishData
+}: RequestInterface): ResInterface => {
     const requestRef = useRef(initRequest);
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);

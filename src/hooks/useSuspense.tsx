@@ -2,9 +2,18 @@
  * 按需加载
  */
 
-import React, { useState, useEffect, Suspense, lazy, ComponentType } from 'react';
+import React, {
+    useState,
+    useEffect,
+    Suspense,
+    lazy,
+    ComponentType
+} from 'react';
 
-export default (factory: Promise<{ default: ComponentType<any> }>, fallback: React.ReactNode | null = null) => {
+export default (
+    factory: Promise<{ default: ComponentType<any> }>,
+    fallback: React.ReactNode | null = null
+) => {
     const [Component, setCompoent] = useState(null);
 
     useEffect(() => {

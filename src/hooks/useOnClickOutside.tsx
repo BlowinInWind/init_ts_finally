@@ -22,7 +22,10 @@ import React, { useEffect, MutableRefObject } from 'react';
  * @param {*} ref
  * @param {*} handler
  */
-const useOnClickOutside = <T extends Element>(ref: MutableRefObject<T>, handler) => {
+const useOnClickOutside = <T extends Element>(
+    ref: MutableRefObject<T>,
+    handler
+) => {
     useEffect(() => {
         const listener = event => {
             if (!ref.current || ref.current.contains(event.target)) {

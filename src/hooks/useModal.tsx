@@ -51,7 +51,11 @@ export default ({ initTitle, visible = false, wrapClassName }: InterModal) => {
                             <Button key="back" onClick={onCancelFun}>
                                 取消
                             </Button>,
-                            <Button key="submit" onClick={onOkFun} type="primary">
+                            <Button
+                                key="submit"
+                                onClick={onOkFun}
+                                type="primary"
+                            >
                                 确认
                             </Button>
                         ]}
