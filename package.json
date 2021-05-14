@@ -10,7 +10,7 @@
       }
     },
     "lint-staged": {
-        "src/*.{js,css,json,md,ts,tsx}": [
+        "src/**/*.{js,css,json,md,ts,tsx}": [
         "prettier --write",
         "npm run fix",
         "git add"
