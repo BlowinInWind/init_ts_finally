@@ -5,3 +5,4 @@ config/**/*
 # /src/__tests__/**
 jestconfig.js
 postcss.config.js
+package.json
