@@ -27,7 +27,7 @@
     "scripts": {
         "prettier": "prettier --write ./src",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "fix": "eslint --ext .js,.ts,.tsx,.jsx ./src --fix",
+        "fix": "eslint --ext .js,.ts,.tsx,.jsx src/ --fix",
         "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.config.dev.js",
         "start:Analyzer": "cross-env NODE_ENV=development Analyzer=true webpack serve --config ./config/webpack.config.dev.js",
         "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.prod.js",
