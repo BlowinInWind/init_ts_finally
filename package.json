@@ -10,9 +10,10 @@
       }
     },
     "lint-staged": {
-      "src/**/*.{jsx,txs,ts,js,md}": [
+        "src/*.{js,css,json,md,ts,tsx}": [
         "prettier --write",
-        "eslint --ext .js,.ts,.tsx,.jsx src/ --fix",
+        "npm run fix",
+        "git add"
       ]
     },
     "config": {
