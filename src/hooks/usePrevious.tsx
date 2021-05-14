@@ -8,8 +8,8 @@ import { useEffect, useRef } from 'react';
  * @param {*} state
  * @returns
  */
-const usePrevious = state => {
-    const ref = useRef();
+const usePrevious = <T,>(state: T): T => {
+    const ref: any = useRef();
 
     useEffect(() => {
         ref.current = state;

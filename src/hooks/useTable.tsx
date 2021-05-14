@@ -43,41 +43,36 @@ const reducer = (state: any, action: any) => {
  */
 
 interface PageInterface {
-    defaultPageSize: number;
+    defaultPageSize?: number;
+    [key: string]: any;
 }
 
 interface RequestInterface {
     fun(useData?: any): Promise<any>;
-    options: PageInterface;
-    needPage: boolean;
-    deps: Array<any>;
-    initRequest: boolean;
+    options?: PageInterface;
+    needPage?: boolean;
+    deps?: Array<any>;
+    initRequest?: boolean;
 }
 
 interface ResInterface {
-    success: boolean;
-    obj: any;
+    code: number;
+    [key: string]: any;
 }
 
 interface PlayLoad {
-    data: any;
     current: number;
     total: number;
+    [key: string]: any;
 }
 
-export default ({
-    fun,
-    deps = [],
-    needPage = true,
-    options = { defaultPageSize: 10 },
-    initRequest = false
-}: RequestInterface) => {
+export default ({ fun, deps = [], needPage = true, options, initRequest = false }: RequestInterface) => {
     const initState = useMemo(() => new UseTableInitState(), []);
     const requestRef = useRef(initRequest);
 
     const [state, dispatch] = useReducer(reducer, {
         ...initState,
-        pageSize: options.defaultPageSize
+        pageSize: options?.defaultPageSize ?? 10
     });
 
     // 请求
@@ -106,14 +101,14 @@ export default ({
         }
         // console.log(params);
         requestAction(params).then((res: ResInterface) => {
-            const payload: PlayLoad = { data: [], total: 0, current: 0 };
-            if (res.success) {
+            const payload: PlayLoad = { total: 0, current: 0 };
+            if (res.code === 200) {
                 if (needPage) {
-                    payload.current = res?.obj?.pageNo ?? 1;
-                    payload.data = res?.obj?.rows ?? [];
-                    payload.total = res?.obj?.total ?? 0;
+                    payload.current = params.pageNum;
+                    payload.data = res?.rows ?? [];
+                    payload.total = res?.total ?? 0;
                 } else {
-                    payload.data = res?.obj ?? [];
+                    payload.data = res?.data ?? [];
                     payload.total = 0;
                 }
             } else {
@@ -178,7 +173,7 @@ export default ({
 
     // 主动搜索
     const searchSubmit = useCallback(
-        async params => {
+        async (params?) => {
             requestRef.current = true;
             // 主要是为了让dispactch或setstate可以实现异步就是可以一个一个更新数据
             await dispatch({
