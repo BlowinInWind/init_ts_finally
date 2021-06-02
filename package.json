@@ -25,6 +25,7 @@
         }
     },
     "scripts": {
+        "jscpd": "jscpd ./src/*",
         "prettier": "prettier --write ./src",
         "fix": "eslint --ext .js,.ts,.tsx,.jsx src/ --fix",
         "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.config.dev.js",

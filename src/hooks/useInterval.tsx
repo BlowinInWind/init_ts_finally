@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from 'react';
 
-export default (callback, delay) => {
-    const savedCallBack = useRef();
+export default (callback: () => void, delay: number) => {
+    const savedCallBack = useRef<() => void>(undefined);
 
     useEffect(() => {
         savedCallBack.current = callback;

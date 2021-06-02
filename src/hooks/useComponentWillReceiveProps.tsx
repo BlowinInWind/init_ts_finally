@@ -1,7 +1,10 @@
 /** @format */
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, DependencyList } from 'react';
 
-const useComponentWillReceiveProps = (callback, dependencies) => {
+const useComponentWillReceiveProps = (
+    callback: () => void,
+    dependencies: DependencyList = []
+) => {
     const firstRender = useRef(true);
 
     useEffect(() => {

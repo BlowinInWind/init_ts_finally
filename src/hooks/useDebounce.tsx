@@ -3,7 +3,7 @@
 // 防抖
 import { useRef, useCallback, useEffect } from 'react';
 
-export default (fn, delay) => {
+export default (fn: (args?: any) => void, delay: number) => {
     const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
     const cancel = useCallback(() => {

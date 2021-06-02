@@ -1,0 +1,15 @@
+{
+    "threshold": 0.1,
+    "reporters": ["html", "console"],
+    "ignore": [
+        "dist/**",
+        "dest/**",
+        "neurons/**",
+        "node_modules/**",
+        "test/**",
+        "data/**",
+        "css/**",
+        "entries/**"
+    ],
+    "absolute": true
+}
