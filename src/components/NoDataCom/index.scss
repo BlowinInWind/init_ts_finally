@@ -1,18 +1,18 @@
 .no_block {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  div {
-    width: 200px;
-    text-align: center;
-    color: #1890FF;
-    display: inline-block;
+    div {
+        width: 200px;
+        text-align: center;
+        color: #1890ff;
+        display: inline-block;
 
-    img {
-      margin-bottom: 15px;
+        img {
+            margin-bottom: 15px;
+        }
     }
-  }
 }

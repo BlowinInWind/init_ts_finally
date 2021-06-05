@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-export default initialValue => {
-    const [state, setState] = useState(initialValue);
+export default <T,>(initialValue: string | ((val: T) => T)) => {
+    const [state, setState] = useState<string | ((val: T) => T)>(initialValue);
     const stateRef = useRef(state);
 
     useEffect(() => {

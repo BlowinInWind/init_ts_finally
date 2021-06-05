@@ -3,8 +3,8 @@
 // 节流
 import { useRef, useCallback, useEffect } from 'react';
 
-const useThrottle = (fn, delay) => {
-    const timeoutRef = useRef(undefined);
+const useThrottle = (fn: (key?: any) => void, delay: number) => {
+    const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
     const cancel = useCallback(() => {
         if (timeoutRef.current) {

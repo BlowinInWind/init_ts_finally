@@ -1,52 +1,28 @@
-// /** @format */
+/** @format */
 
-// // 防抖
+// 防抖
 import { useRef, useCallback, useEffect } from 'react';
 
-// export default (fn, delay) => {
-//     const timeoutRef = useRef();
+export default (fn: (args?: any) => void, delay: number) => {
+    const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
-//     const cancel = useCallback(() => {
-//         if (timeoutRef.current) {
-//             clearTimeout(timeoutRef.current);
-//         }
-//     }, []);
-
-//     const run = useCallback(
-//         (...args) => {
-//             cancel();
-//             timeoutRef.current = setTimeout(() => {
-//                 fn(...args);
-//             }, delay);
-//         },
-//         [delay, cancel]
-//     );
-
-//     useEffect(() => cancel, []);
-
-//     return { run, cancel };
-// };
-
-export default function useDebounce<T extends (...args: any[]) => any>(
-    func: T,
-    delay: number,
-    deps
-): [T, () => void] {
-    const timer = useRef<number>();
     const cancel = useCallback(() => {
-        if (timer.current) {
-            clearTimeout(timer.current);
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
         }
     }, []);
 
-    const run = useCallback((...args) => {
-        cancel();
-        timer.current = window.setTimeout(() => {
-            func(...args);
-        }, delay);
-    }, deps);
+    const run = useCallback(
+        (...args) => {
+            cancel();
+            timeoutRef.current = setTimeout(() => {
+                fn(...args);
+            }, delay);
+        },
+        [delay, cancel]
+    );
 
     useEffect(() => cancel, []);
 
-    return [run as T, cancel];
-}
+    return { run, cancel };
+};

@@ -18,7 +18,7 @@ class NoDataCom extends Component {
                 style={{ height: document.body.clientHeight - 64 }}
             >
                 <div>
-                    <img src={img} alt="" />
+                    <img alt="" src={img} />
                     无关联信息，无查看权限
                 </div>
             </div>

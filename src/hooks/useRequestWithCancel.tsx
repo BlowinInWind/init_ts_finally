@@ -25,7 +25,7 @@ let cancel: any;
  * @param {*} effect
  * @param {*} deps
  */
-const useRequestWithCancel = (effect: any, deps: any) => {
+const useRequestWithCancel = (effect: ({ cancelToken }) => void, deps: any) => {
     useEffect(() => {
         effect({
             cancelToken: new CancelToken(function executor(c) {

@@ -50,15 +50,15 @@ class Echart extends React.Component<Props> {
         const { style = { height: '300px' }, className = '' } = this.props;
         return (
             <EchartsForReact
-                echarts={echarts}
+                ref={this.echartRef}
                 className={className}
-                option={this.props.data}
+                echarts={echarts}
                 // showLoading
                 notMerge
                 onEvents={this.onEvents}
+                option={this.props.data}
                 style={style}
                 theme="echartsConfig"
-                ref={this.echartRef}
             />
         );
     }

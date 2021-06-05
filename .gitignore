@@ -12,6 +12,8 @@ node_modules
 
 # production
 # *.zip
+/report
+report
 
 # misc
 .DS_Store
