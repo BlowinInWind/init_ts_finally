@@ -2,7 +2,7 @@ import { RouteProps } from 'react-router-dom';
 import BaseComponents from '@layout/index';
 import asyncCom from './asyncCom';
 
-const Index = asyncCom(import('@pages/Index'));
+const Index = asyncCom(import('@pages/Index/index'));
 const Index2 = asyncCom(import('@pages/Index2'));
 const Login = asyncCom(import('@pages/Login'));
 const NotFound = asyncCom(import('@pages/404'));

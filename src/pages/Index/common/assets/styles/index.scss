@@ -1,13 +1,25 @@
-.scsscolor {
-  color: cadetblue;
+// .scsscolor {
+//   color: cadetblue;
+// }
+
+// .from_wrapper {
+//   margin-bottom: 15px;
+// }
+
+// .tool_wrapper {
+//   .ant-btn {
+//     margin-right: 15px;
+//   }
+// }
+
+.wrapper {
+    width: 750px;
+    height: 32Px;
+    background: rebeccapurple;
 }
 
-.from_wrapper {
-  margin-bottom: 15px;
-}
 
-.tool_wrapper {
-  .ant-btn {
-    margin-right: 15px;
-  }
+.wrapper_inner{
+    width: 690px;
+    height: 32Px;
 }

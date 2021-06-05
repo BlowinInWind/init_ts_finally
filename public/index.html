@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <html lang="en" data-theme="dark"> -->
+    <!-- <html lang="en" data-theme="dark"> -->
 
-<head>
-    <title>EHR人力资源管理系统</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <meta name="format-detection" content="telephone=no" />
-    <meta charset="UTF-8" />
-</head>
+    <head>
+        <title></title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+        />
+        <meta name="format-detection" content="telephone=no" />
+        <meta charset="UTF-8" />
+    </head>
 
-<body>
-    <div id="app"></div>
-</body>
-
-<!-- <script>
+    <body>
+        <div id="app"></div>
+    </body>
+    <script>
+        (function (win, doc) {
+            function change() {
+                // 以psd图为375宽时，默认字体大小为 16  750时对应32
+                // 这样图纸测量多少，直接写就行，不用重新换算
+                doc.documentElement.style.fontSize =
+                    (32 * doc.documentElement.clientWidth) / 750 + 'px';
+            }
+            change();
+            win.addEventListener(
+                'resize',
+                function () {
+                    change();
+                },
+                false
+            );
+        })(window, document);
+    </script>
+    <!-- <script>
     (function (designWidth, maxWidth) {
         var doc = document,
             win = window;
@@ -58,5 +77,4 @@
         }, false);
     })(750, 750);
 </script> -->
-
 </html>

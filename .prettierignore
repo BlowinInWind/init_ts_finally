@@ -5,3 +5,5 @@ dist/
 .eslintignore
 /node_modules/
 
+src/**/*.scss
+

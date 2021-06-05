@@ -8,8 +8,7 @@ const Index: React.FC = props => {
         <>
             {props.children}
             <br />
-
-            <Children></Children>
+            {/* <Children></Children> */}
         </>
     );
 };
