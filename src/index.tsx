@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import { ConfigProvider } from 'antd';
 import { BrowserRouter as Router } from 'react-router-dom';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
+import '@common/assets/styles/index.scss';
 import Root from './routes';
 import store from './store';
 

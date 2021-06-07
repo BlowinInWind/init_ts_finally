@@ -1,8 +1,14 @@
 /** @format */
 
-// 防抖
 import { useRef, useCallback, useEffect } from 'react';
 
+/**
+ * 防抖
+ *
+ * @param {(args?: any) => void} fn
+ * @param {number} delay
+ * @return {*}
+ */
 export default (fn: (args?: any) => void, delay: number) => {
     const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 

@@ -2,7 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 import './common/assets/styles/index.scss';
+import SearchDropDown from '@components/SearchDropDown';
 
+const A = ({ data }) => {
+    return <div>11</div>;
+};
+
+// eslint-disable-next-line react/no-multi-comp
 const Index = () => {
     // const [a, setA] = useState(0);
     // useEffect(() => {
@@ -21,6 +27,13 @@ const Index = () => {
     return (
         <div className="wrapper">
             <div className="wrapper_inner"></div>
+
+            <SearchDropDown
+                render={data => {
+                    return <A data={data}></A>;
+                }}
+                requestUrl="q"
+            ></SearchDropDown>
         </div>
     );
 };
