@@ -20,15 +20,15 @@ module.exports = {
             ]
         }),
 
-        require('postcss-pxtorem')({
-            rootValue: 32, // 指定转换倍率，我现在设置这个表示1rem=37.5px;
-            propList: ['*', '!font-size'], // 属性列表，表示你要把哪些css属性的px转换成rem，*表示所有
-            minPixelValue: 1, // 需要转换的最小值，一般1px像素不转换，以上才转换
-            unitPrecision: 6, // 转换成rem单位的小数点后的保留位数
-            selectorBlackList: ['van-circle__layer', 'ignore'],
-            exclude: /node_modules/i,
-            mediaQuery: false // 允许在媒体查询中转换px
-        })
+        // require('postcss-pxtorem')({
+        //     rootValue: 32, // 指定转换倍率，我现在设置这个表示1rem=37.5px;
+        //     propList: ['*', '!font-size'], // 属性列表，表示你要把哪些css属性的px转换成rem，*表示所有
+        //     minPixelValue: 1, // 需要转换的最小值，一般1px像素不转换，以上才转换
+        //     unitPrecision: 6, // 转换成rem单位的小数点后的保留位数
+        //     selectorBlackList: ['van-circle__layer', 'ignore'],
+        //     exclude: /node_modules/i,
+        //     mediaQuery: false // 允许在媒体查询中转换px
+        // })
 
         // require('postcss-px-to-viewport')({
         //     exclude: /node_modules/i,

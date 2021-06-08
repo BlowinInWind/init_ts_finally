@@ -11,9 +11,9 @@
   },
   "lint-staged": {
     "src/**/*.{jsx,txs,ts,js,md}": [
-      "prettier --write",
-      "eslint --fix",
-      "git add"
+        "npm run prettier",
+        "npm run fix",
+        "git add"
     ]
   },
   "config": {
@@ -26,7 +26,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write ./src",
     "fix": "eslint --ext .js,.ts,.tsx,.jsx src/ --fix",
+    "jscpd": "jscpd ./src/*",
     "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.config.dev.js",
     "start:Analyzer": "cross-env NODE_ENV=development Analyzer=true webpack serve --config ./config/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.prod.js",
