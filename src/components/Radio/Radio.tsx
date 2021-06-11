@@ -26,7 +26,6 @@ const Radio: React.FC<RadioProps> & { Group?: typeof RadioGroup } = ({
 }) => {
     const [inchecked, setInChecked] = useState(checked);
     const context = useContext(GroupContext);
-
     useEffect(() => {
         setInChecked(checked);
     }, [checked]);

@@ -12,6 +12,7 @@ import { Checkbox } from 'antd';
 const Index = () => {
     const [checked, setChecked] = useState(true);
     const [value, setValue] = useState();
+    const [value1, setValue1] = useState();
 
     const [checkedList, setCheckedList] = React.useState(['1', '2', '3']);
     const [indeterminate, setIndeterminate] = React.useState(false);
@@ -49,6 +50,20 @@ const Index = () => {
                     <Radio value={2}>222</Radio>
                 </Radio.Group>
                 <div>radio</div>
+
+                <div>radio</div>
+                <Radio.Group
+                    onChange={v => {
+                        // console.log(v);
+                        setValue1(v);
+                    }}
+                    value={value1}
+                >
+                    <div>
+                        <Radio value="111">121</Radio>
+                    </div>
+                    <Radio value="222">221</Radio>
+                </Radio.Group>
             </div>
             {/* <CheckBox
                 checked={checkAll}

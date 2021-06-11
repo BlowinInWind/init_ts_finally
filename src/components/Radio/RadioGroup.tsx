@@ -21,7 +21,7 @@ const RadioGroup: React.FC<RadioGroupProps> = ({
     options,
     children,
     onChange,
-    value = []
+    value
 }) => {
     const [selectValue, setSelectValue] = useState(value);
 
