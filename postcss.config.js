@@ -18,7 +18,7 @@ module.exports = {
                 'Android >= 4',
                 'Chrome >= 40'
             ]
-        }),
+        })
 
         // require('postcss-pxtorem')({
         //     rootValue: 32, // 指定转换倍率，我现在设置这个表示1rem=37.5px;

@@ -1,10 +1,13 @@
 /** @format */
 
 import React, { useState, useEffect } from 'react';
-import './common/assets/styles/index.scss';
 import CheckBox from '@components/Checkbox/index';
 import Radio from '@components/Radio/index';
 import { Checkbox } from 'antd';
+import styles from './common/assets/styles/styles.scss';
+import a from './common/assets/styles/a.less';
+import b from './common/assets/styles/b.css';
+import './common/assets/styles/index.scss';
 
 // const plainOptions = ['Apple', 'Pear', 'Orange'];
 
@@ -34,6 +37,10 @@ const Index = () => {
 
     return (
         <div className="wrapper">
+            <div
+                className={`${styles.wrapper_inner}  ${a.less} ${b.css}`}
+            ></div>
+
             <div className="wrapper_inner"></div>
             <div>
                 <div>radio</div>

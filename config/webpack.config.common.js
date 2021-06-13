@@ -364,9 +364,39 @@ const commonConfig = {
             // 找到第一个匹配的进行解析  设置module与非module形式都支持，根据文件名称区分，文件写了[name].module.scss或者[name].module.less即支持module
             {
                 oneOf: [
+                    // {
+                    //     // sassmodule
+                    //     test: sassModuleReg,
+                    //     use: [
+                    //         ...styleLoader({
+                    //             modules: {
+                    //                 localIdentName: '[local]--[hash:base64:5]'
+                    //             }
+                    //         }),
+                    //         ...sassLoader()
+                    //     ],
+                    //     include: config.appSrc
+                    // },
+                    // {
+                    //     test: lessModuleReg,
+                    //     use: [
+                    //         ...styleLoader({
+                    //             modules: {
+                    //                 localIdentName: '[local]--[hash:base64:5]'
+                    //             }
+                    //         }),
+                    //         ...lessLoader({
+                    //             lessOptions: {
+                    //                 javascriptEnabled: true
+                    //             }
+                    //         })
+                    //     ],
+                    //     include: config.appSrc
+                    // },
                     {
-                        // sassmodule
-                        test: sassModuleReg,
+                        // sass
+                        test: sassReg,
+                        resourceQuery: /css_modules/,
                         use: [
                             ...styleLoader({
                                 modules: {
@@ -378,8 +408,15 @@ const commonConfig = {
                         include: config.appSrc
                     },
                     {
-                        // lessmodule
-                        test: lessModuleReg,
+                        // sass
+                        test: sassReg,
+                        use: [...styleLoader(), ...sassLoader()],
+                        include: config.appSrc
+                    },
+                    {
+                        // less
+                        test: lessReg,
+                        resourceQuery: /css_modules/,
                         use: [
                             ...styleLoader({
                                 modules: {
@@ -392,12 +429,6 @@ const commonConfig = {
                                 }
                             })
                         ],
-                        include: config.appSrc
-                    },
-                    {
-                        // sass
-                        test: sassReg,
-                        use: [...styleLoader(), ...sassLoader()],
                         include: config.appSrc
                     },
                     {
@@ -413,17 +444,31 @@ const commonConfig = {
                         ],
                         include: config.appSrc
                     },
+
+                    // {
+                    //     // cssmodule
+                    //     test: cssModuleReg,
+                    // use: [
+                    //     ...styleLoader({
+                    //         modules: {
+                    //             localIdentName: '[local]--[hash:base64:5]'
+                    //         }
+                    //     })
+                    // ],
+                    //     include: config.appSrc
+                    // },
                     {
-                        // cssmodule
-                        test: cssModuleReg,
+                        // css
+                        test: cssReg,
+                        resourceQuery: /css_modules/,
                         use: [
                             ...styleLoader({
                                 modules: {
                                     localIdentName: '[local]--[hash:base64:5]'
                                 }
                             })
-                        ],
-                        include: config.appSrc
+                        ]
+                        // include: config.appSrc
                     },
                     {
                         // css
