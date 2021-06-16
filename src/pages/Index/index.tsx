@@ -127,19 +127,8 @@ export default () => {
         },
         [current]
     );
+
     return (
-<<<<<<< HEAD
-        <div className="answer-sheet">
-            <div className="answer-sheet-head">
-                <span className="answer-sheet-head_title">
-                    企业AI无形资产智能盘点
-                </span>
-                <span className="answer-sheet-head_counter">{`${current}/${total.current}`}</span>
-                <Button
-                    className="answer-sheet-head_skip"
-                    disabled={current === total.current}
-                    onClick={() => setCurrent(total.current)}
-=======
         <div className="wrapper">
             <div
                 className={`${styles.wrapper_inner}  ${a.less} ${b.css}`}
@@ -154,10 +143,9 @@ export default () => {
                         setValue(v);
                     }}
                     value={value}
->>>>>>> d817ab40c3fc6f1c38af54b74bb4747da0710696
                 >
                     跳过
-                </Button>
+                </Radio.Group>
             </div>
 
             <div className="answer-sheet-question">
