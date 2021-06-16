@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-export default <T,>(initialValue: string | ((val: T) => T)) => {
+export default <T>(initialValue: string | ((val: T) => T)) => {
     const [state, setState] = useState<string | ((val: T) => T)>(initialValue);
     const stateRef = useRef(state);
 

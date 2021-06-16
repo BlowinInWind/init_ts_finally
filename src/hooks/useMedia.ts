@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 /**
  * const columnCount = useMedia(
@@ -17,7 +17,7 @@ import React, { useState, useEffect } from 'react';
  */
 
 // Hook
-const useMedia = <T,>(queries: string[], values: T[], defaultValue: T) => {
+const useMedia = <T>(queries: string[], values: T[], defaultValue: T) => {
     const mediaQueryLists = queries.map(q => window.matchMedia(q));
 
     const getValue = () => {

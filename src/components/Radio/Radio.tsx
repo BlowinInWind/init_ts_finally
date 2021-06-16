@@ -31,12 +31,10 @@ const Radio: React.FC<RadioProps> & { Group?: typeof RadioGroup } = ({
     }, [checked]);
 
     useEffect(() => {
-        if (context && value) {
-            setInChecked(
-                context === (typeof value === 'number' ? String(value) : value)
-            );
-        }
-    }, [context]);
+        setInChecked(
+            context === (typeof value === 'number' ? String(value) : value)
+        );
+    }, [context, value]);
 
     const onChangeInner = (e: React.ChangeEvent<HTMLInputElement>) => {
         setInChecked(e.target.checked);
@@ -46,6 +44,7 @@ const Radio: React.FC<RadioProps> & { Group?: typeof RadioGroup } = ({
         }
     };
 
+    // console.log(inchecked);
     return (
         // eslint-disable-next-line jsx-a11y/label-has-associated-control
         <label

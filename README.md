@@ -34,3 +34,78 @@
 EditorConfig: 跨编辑器和 IDE 编写代码，保持一致的简单编码风格；
 Prettier: 专注于代码格式化的工具，美化代码；
 ESLint：作代码质量检测、编码风格约束等；
+
+```
+├─ .cz-config.js
+├─ .editorconfig
+├─ .eslintignore
+├─ .eslintrc.js
+├─ .gitignore
+├─ .jscpd.json
+├─ .prettierignore
+├─ .prettierrc.js
+├─ .travis.yml
+├─ README.md
+├─ babel.config.js
+├─ commitlint.config.js
+├─ config
+│  ├─ config.js
+│  ├─ getLocalIp.js
+│  ├─ styles.js
+│  ├─ typescriptFormatter.js
+│  ├─ webpack.config.common.js
+│  ├─ webpack.config.dev.js
+│  └─ webpack.config.prod.js
+├─ dist
+├─ jestconfig.js
+├─ jsconfig.json
+├─ package.json
+├─ postcss.config.js
+├─ public
+│  ├─ ico.ico
+│  └─ index.html
+├─ src
+│  ├─ __tests__
+│  │  └─ setup.js
+│  ├─ common
+│  │  ├─ assets
+│  │  └─ js
+│  ├─ components
+│  ├─ hooks
+│  ├─ index.tsx
+│  ├─ layout
+│  │  ├─ Children.tsx
+│  │  ├─ Demo.tsx
+│  │  ├─ commen
+│  │  ├─ index.tsx
+│  │  └─ typings
+│  ├─ mock
+│  │  └─ mockApi.js
+│  ├─ pages
+│  │  ├─ 404
+│  │  │  └─ index.tsx
+│  │  ├─ Index
+│  │  │  ├─ common
+│  │  │  │  └─ assets
+│  │  │  │     └─ styles
+│  │  │  └─ index.tsx
+│  ├─ routes
+│  │  ├─ asyncCom.tsx
+│  │  ├─ index.tsx
+│  │  └─ routerConfigs.tsx
+│  ├─ store
+│  │  ├─ index.ts
+│  │  └─ reducer.ts
+│  ├─ typings
+│  │  └─ index.d.ts
+│  └─ utils
+│     ├─ echartsConfig.ts
+│     ├─ request
+│     │  ├─ BaseRequest.ts
+│     │  ├─ BaseSubFormRequest.ts
+│     │  └─ BaseSubJsonRequest.ts
+│     ├─ styles.ts
+│     └─ utils.ts
+└─ tsconfig.json
+
+```

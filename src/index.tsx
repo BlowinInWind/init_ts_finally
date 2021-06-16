@@ -38,3 +38,14 @@ const hotDev = (module: any) => {
 hotDev(module);
 
 render(<App />);
+
+// type GetArrTypeKey<T> = {
+//     [P in keyof T]: T[P] extends any[] ? P : never;
+// }[keyof T];
+
+// interface A {
+//     arr: any[];
+//     b: string;
+// }
+
+// type BB = GetArrTypeKey<A>;

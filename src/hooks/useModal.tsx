@@ -33,6 +33,7 @@ export default ({ initTitle, visible = false, wrapClassName }: InterModal) => {
                 hidden();
             }
         };
+
         const onCancelFun = () => {
             const { onCancel } = props;
             if (onCancel) {

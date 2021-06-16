@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 // 让useState可以按照setState的方法使用
-export default <T,>(initState: string | ((val: T) => void)) => {
+export default <T>(initState: string | ((val: T) => void)) => {
     const [state, setState] = useState<string | ((val: T) => void)>(initState);
     const isUpdate = useRef<() => void>();
 

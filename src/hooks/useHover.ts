@@ -1,6 +1,6 @@
-import React, { useEffect, MutableRefObject, useState, useRef } from 'react';
+import { useEffect, MutableRefObject, useState, useRef } from 'react';
 
-const useHover = <T,>(): [MutableRefObject<T>, boolean] => {
+const useHover = <T>(): [MutableRefObject<T>, boolean] => {
     const [value, setValue] = useState<boolean>(false);
 
     const ref: any = useRef<T | null>(null);

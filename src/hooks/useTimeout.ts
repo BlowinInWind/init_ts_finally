@@ -1,6 +1,6 @@
 /** @format */
 
-import React, { useEffect, useRef, DependencyList } from 'react';
+import { useEffect, useRef, DependencyList } from 'react';
 
 export default (cb: () => void, timeout: number, deps: DependencyList = []) => {
     const callbackRef = useRef(cb);
