@@ -1,10 +1,39 @@
 /** @format */
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
+import CheckBox from '@components/Checkbox/index';
+import Radio from '@components/Radio/index';
+import { Checkbox } from 'antd';
+import styles from './common/assets/styles/styles.scss';
+import a from './common/assets/styles/a.less';
+import b from './common/assets/styles/b.css';
 import './common/assets/styles/index.scss';
-import { Checkbox, Radio, Button } from 'antd';
-import CheckBox from '@components/Checkbox';
-import Radddio from '@components/Radio';
+
+// const plainOptions = ['Apple', 'Pear', 'Orange'];
+
+// eslint-disable-next-line react/no-multi-comp
+const Index = () => {
+    const [checked, setChecked] = useState(true);
+    const [value, setValue] = useState();
+    const [value1, setValue1] = useState();
+
+    const [checkedList, setCheckedList] = React.useState(['1', '2', '3']);
+    const [indeterminate, setIndeterminate] = React.useState(false);
+    const [checkAll, setCheckAll] = React.useState(true);
+
+    // const [a, setA] = useState(0);
+    // useEffect(() => {
+    //     setA(1);
+    // }, []);
+
+    // return (
+    //     <div>
+    //         <Demo></Demo>
+    //         11111
+    //         <button>{a}</button>
+    //         <input type="text" value={a} />
+    //     </div>
+    // );
 
 const questions = [
     {
@@ -99,6 +128,7 @@ export default () => {
         [current]
     );
     return (
+<<<<<<< HEAD
         <div className="answer-sheet">
             <div className="answer-sheet-head">
                 <span className="answer-sheet-head_title">
@@ -109,6 +139,22 @@ export default () => {
                     className="answer-sheet-head_skip"
                     disabled={current === total.current}
                     onClick={() => setCurrent(total.current)}
+=======
+        <div className="wrapper">
+            <div
+                className={`${styles.wrapper_inner}  ${a.less} ${b.css}`}
+            ></div>
+
+            <div className="wrapper_inner"></div>
+            <div>
+                <div>radio</div>
+                <Radio.Group
+                    onChange={v => {
+                        // console.log(v);
+                        setValue(v);
+                    }}
+                    value={value}
+>>>>>>> d817ab40c3fc6f1c38af54b74bb4747da0710696
                 >
                     跳过
                 </Button>
