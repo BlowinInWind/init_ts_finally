@@ -357,6 +357,7 @@
 
 import React, { useState, useCallback } from 'react';
 import usePrevious from '@hooks/usePrevious';
+import styles from './common/assets/styles/index.module.scss';
 
 const A = () => {
     return <div>111</div>;
@@ -376,11 +377,17 @@ export default () => {
     return (
         <div className="page">
             <div className="content">
-                <span>{number}</span>
+                <span className={styles.inner}>{number}</span>
                 <br />
 
                 <B></B>
-                <button onClick={() => setNumber(1)}>将number设置成1</button>
+                <button
+                    className={styles.box}
+                    onClick={() => setNumber(1)}
+                    style={{ visibility: 'hidden', justifyContent: 'inherit' }}
+                >
+                    将number设置成1
+                </button>
                 <br />
                 <button onClick={() => setNumber(2)}>将number设置成2</button>
                 <br />
