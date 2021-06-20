@@ -1,0 +1,27 @@
+.wait-loding {
+	background: #ccc51c;
+    margin: 20px 0;
+    // height: 400px;
+    display: flex;
+    h1 {
+        margin: auto;
+        color: hsla(0,0%,100%,.3);
+        font: 900 800% Baskerville, 'Palatino Linotype', Palatino, serif;
+        position: relative;
+    }
+    
+    @keyframes loading {
+        from { max-width: 0; }
+    }
+    
+    h1:before {
+        content: attr(data-content);
+        white-space: nowrap;
+        position: absolute;
+        overflow: hidden;
+        max-width: 4em;
+        color: white;
+        animation: loading 10s linear infinite;
+    }
+}
+

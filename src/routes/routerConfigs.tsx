@@ -1,11 +1,12 @@
+import React from 'react';
 import { RouteProps } from 'react-router-dom';
 import BaseComponents from '@layout/index';
 import asyncCom from './asyncCom';
 
-const Index = asyncCom(import('@pages/Index/index'));
-const Index2 = asyncCom(import('@pages/Index2'));
-const Login = asyncCom(import('@pages/Login'));
-const NotFound = asyncCom(import('@pages/404'));
+const Index = asyncCom(React.lazy(() => import('@pages/Index/index')));
+const Index2 = asyncCom(React.lazy(() => import('@pages/Index2')));
+const Login = asyncCom(React.lazy(() => import('@pages/Login')));
+const NotFound = asyncCom(React.lazy(() => import('@pages/404')));
 
 export interface RouterConfig extends RouteProps {
     auth?: boolean; // 登录验证
@@ -73,42 +74,16 @@ const routers: RouterConfig[] = [
         auth: true,
         routes: [
             {
-                path: '/index/home',
-                component: Index
-            },
-            {
                 path: '/index/name',
+                exact: true,
                 component: Index2
             },
             {
-                path: '/index/bbb',
+                path: '/index/home',
+                exact: true,
                 component: Index
             }
         ]
-    },
-    {
-        path: '/data',
-        auth: true,
-        component: BaseComponents,
-        routes: [
-            {
-                path: '/data/home',
-                component: Index
-            },
-            {
-                path: '/data/name',
-                component: Index2
-            },
-            {
-                path: '/data/bbb',
-                component: Index
-            }
-        ]
-    },
-    {
-        path: '/',
-        exact: true,
-        redirect: '/index/home'
     },
     {
         path: '*',
@@ -117,6 +92,6 @@ const routers: RouterConfig[] = [
     }
 ];
 
-const routeUsed = routers.map(item => createPermissionRouter(item, true));
+const routeUsed = routers.map(item => createPermissionRouter(item, false));
 
 export default routeUsed;

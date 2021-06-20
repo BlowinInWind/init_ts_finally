@@ -6,15 +6,11 @@ import React, { Suspense, ReactNode, ComponentType } from 'react';
  * @param fallback 默认的loading
  * @returns {*}
  */
-export default (
-    Component: Promise<{ default: ComponentType<any> }>,
-    fallback: ReactNode = null
-) => {
-    const Com = React.lazy(() => Component);
+export default (Component: ComponentType<any>, fallback: ReactNode = null) => {
     return props => {
         return (
             <Suspense fallback={fallback}>
-                <Com {...props} />
+                <Component {...props} />
             </Suspense>
         );
     };

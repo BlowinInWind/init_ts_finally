@@ -1,6 +1,6 @@
 /** @format */
 
-import { useRef, useCallback, useEffect } from 'react';
+import { useRef, useCallback, useEffect, DependencyList } from 'react';
 
 /**
  * 防抖
@@ -9,7 +9,11 @@ import { useRef, useCallback, useEffect } from 'react';
  * @param {number} delay
  * @return {*}
  */
-export default (fn: (args?: any) => void, delay: number) => {
+export default (
+    fn: (args?: any) => void,
+    delay: number,
+    deps: DependencyList = []
+) => {
     const timeoutRef = useRef<NodeJS.Timeout | undefined>(undefined);
 
     const cancel = useCallback(() => {
@@ -25,7 +29,7 @@ export default (fn: (args?: any) => void, delay: number) => {
                 fn(...args);
             }, delay);
         },
-        [delay, cancel]
+        [delay, cancel, deps]
     );
 
     useEffect(() => cancel, []);

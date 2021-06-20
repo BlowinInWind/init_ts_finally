@@ -17,12 +17,14 @@ import { useState, useEffect, MutableRefObject } from 'react';
 
 const useOnScreen = <T extends Element>(
     ref: MutableRefObject<T>,
-    options: IntersectionObserverInit
+    options?: IntersectionObserverInit
 ) => {
     const [isIntersecting, setIntersecting] = useState<boolean>(false);
 
-    const [intersectionObserverEntry, setIntersectionObserverEntry] =
-        useState<IntersectionObserverEntry | null>(null);
+    const [
+        intersectionObserverEntry,
+        setIntersectionObserverEntry
+    ] = useState<IntersectionObserverEntry | null>(null);
 
     useEffect(() => {
         if (ref.current && typeof IntersectionObserver === 'function') {
