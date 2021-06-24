@@ -7,8 +7,13 @@ import { ConfigProvider } from 'antd';
 import { BrowserRouter as Router } from 'react-router-dom';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import '@common/assets/styles/index.scss';
+import eruda from 'eruda';
 import Root from './routes';
 import store from './store';
+
+eruda.init({
+    useShadowDom: true
+});
 
 const App = () => {
     return (

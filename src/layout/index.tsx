@@ -1,7 +1,6 @@
 /** @format */
 
 import React from 'react';
-import Children from './Children';
 
 const Index: React.FC = props => {
     return (

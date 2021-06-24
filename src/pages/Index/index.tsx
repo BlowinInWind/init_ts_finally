@@ -355,12 +355,13 @@
 
 // // export default Index;
 
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import usePrevious from '@hooks/usePrevious';
 import styles from './common/assets/styles/index.module.scss';
 
-const A = () => {
-    return <div>111</div>;
+const A = ({ changeName }) => {
+    console.log('++++++++++++++++');
+    return <div onClick={changeName}>111 </div>;
 };
 
 function areEqual(prevProps, nextProps) {
@@ -371,20 +372,41 @@ const B = React.memo(A);
 
 export default () => {
     const [number, setNumber] = useState(0);
+    const [number1, setNumber1] = useState(0);
+    useEffect(() => {
+        console.log('useEffect');
+        // setTimeout(() => {
+        setNumber(1);
+        setNumber1(2);
+        // }, 1000);
+    }, []);
+    console.log('组件刷新');
+
+    useEffect(() => {
+        console.log(number);
+        console.log(number1);
+    }, [number1]);
+
+    useEffect(() => {
+        console.log(number);
+        console.log(number1);
+    }, [number]);
 
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     // const changeName = useCallback(() => {}, []);
+    const changeName = () => {};
+
     return (
         <div className="page">
             <div className="content">
                 <span className={styles.inner}>{number}</span>
                 <br />
 
-                <B></B>
+                <A changeName={changeName}></A>
                 <button
                     className={styles.box}
                     onClick={() => setNumber(1)}
-                    style={{ visibility: 'hidden', justifyContent: 'inherit' }}
+                    // style={{ visibility: 'hidden', justifyContent: 'inherit' }}
                 >
                     将number设置成1
                 </button>
