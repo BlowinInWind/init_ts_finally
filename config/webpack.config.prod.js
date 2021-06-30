@@ -22,7 +22,8 @@ const publicConfig = {
     output: {
         path: config.appbuild,
         filename: 'app/js/[name].[contenthash:8].js',
-        chunkFilename: 'app/js/[name].[contenthash:8].chunk.js'
+        chunkFilename: 'app/js/[name].[contenthash:8].chunk.js',
+        publicPath: '/'
         // library: 'result', // 函数或变量名字
         // libraryTarget: 'umd' //打包文件加载方式
     },
