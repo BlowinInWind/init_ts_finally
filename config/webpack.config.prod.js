@@ -32,9 +32,6 @@ const publicConfig = {
     mode: 'production',
 
     plugins: [
-        // 只加载 `moment/locale/ja.js` 和 `moment/locale/it.js` 优化moment体积
-        // new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-
         new TerserPlugin({
             exclude: /node_modules/,
             extractComments: false,
@@ -50,7 +47,7 @@ const publicConfig = {
         // })
 
         new CompressionWebpackPlugin({
-            filename: 'app/js/[name].gz[query]',
+            filename: '/app/js/[name].gz[query]',
             // 压缩后缀
             algorithm: 'gzip',
             cache: true,
@@ -74,7 +71,7 @@ const publicConfig = {
         // ),
 
         // 预编译所有模块到一个闭包中，提升代码在浏览器中的执行速度
-        new webpack.optimize.ModuleConcatenationPlugin(),
+        // new webpack.optimize.ModuleConcatenationPlugin(),
 
         // 在编译出现错误时，使用 NoEmitOnErrorsPlugin 来跳过输出阶段。
         // 这样可以确保输出资源不会包含错误
