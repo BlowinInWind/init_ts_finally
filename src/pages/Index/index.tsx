@@ -359,9 +359,9 @@ import React, { useState, useCallback, useEffect } from 'react';
 import usePrevious from '@hooks/usePrevious';
 import styles from './common/assets/styles/index.module.scss';
 
-const A = ({ changeName }) => {
+const A = () => {
     console.log('++++++++++++++++');
-    return <div onClick={changeName}>111 </div>;
+    return <div>111 </div>;
 };
 
 function areEqual(prevProps, nextProps) {
@@ -394,7 +394,9 @@ export default () => {
 
     // eslint-disable-next-line @typescript-eslint/no-empty-function
     // const changeName = useCallback(() => {}, []);
-    const changeName = () => {};
+    const changeName = () => {
+        // todo
+    };
 
     return (
         <div className="page">
@@ -402,7 +404,7 @@ export default () => {
                 <span className={styles.inner}>{number}</span>
                 <br />
 
-                <A changeName={changeName}></A>
+                <A></A>
                 <button
                     className={styles.box}
                     onClick={() => setNumber(1)}

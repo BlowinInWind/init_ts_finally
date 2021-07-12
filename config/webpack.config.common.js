@@ -18,8 +18,8 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
     .BundleAnalyzerPlugin;
-// const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
-// const smp = new SpeedMeasurePlugin();
+const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
+const smp = new SpeedMeasurePlugin();
 const typescriptFormatter = require('./typescriptFormatter');
 
 // 判断环境
@@ -497,5 +497,5 @@ const commonConfig = {
     }
 };
 
-// module.exports = smp.wrap(commonConfig);
-module.exports = commonConfig;
+module.exports = smp.wrap(commonConfig);
+// module.exports = commonConfig;
