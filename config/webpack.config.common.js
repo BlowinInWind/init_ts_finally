@@ -399,6 +399,7 @@ const commonConfig = {
                         resourceQuery: /css_modules/,
                         use: [
                             ...styleLoader({
+                                importLoaders: 2,
                                 modules: {
                                     localIdentName: '[local]--[hash:base64:5]'
                                 }
@@ -419,6 +420,7 @@ const commonConfig = {
                         resourceQuery: /css_modules/,
                         use: [
                             ...styleLoader({
+                                importLoaders: 2,
                                 modules: {
                                     localIdentName: '[local]--[hash:base64:5]'
                                 }
@@ -463,6 +465,7 @@ const commonConfig = {
                         resourceQuery: /css_modules/,
                         use: [
                             ...styleLoader({
+                                importLoaders: 2,
                                 modules: {
                                     localIdentName: '[local]--[hash:base64:5]'
                                 }
