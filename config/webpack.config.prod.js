@@ -29,6 +29,8 @@ const publicConfig = {
     },
 
     // devtool: 'none',
+    devtool: 'cheap-module-source-map',
+
     mode: 'production',
 
     plugins: [

@@ -9,8 +9,8 @@ const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin'
 const getLocalHostnameAndIp = require('./getLocalIp');
 
 const devConfig = merge(commonConfig, {
-    // devtool: 'eval-source-map',
-    devtool: 'cheap-module-source-map',
+    // devtool: 'cheap-module-source-map',
+    devtool: 'eval-cheap-module-source-map',
     mode: 'development',
 
     output: {
