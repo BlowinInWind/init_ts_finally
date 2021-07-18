@@ -6,7 +6,7 @@ const os = require('os');
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 const colors = require('./styles');
-
+require('dotenv').config({ path: '.env' });
 const baseUrl = 'http://test.gateway.heimaqf.cn';
 
 module.exports = {
@@ -24,14 +24,15 @@ module.exports = {
     // favicon 路径
     favicon: resolveApp('public/ico.ico'),
     // 默认开启的本地项目端口号
-    port: '3000',
+    port: process.env.PORT,
     // 手动配置打开的host
-    host: '0.0.0.0',
+    host: process.env.HOST,
 
     // 需要代理
     proxy: {
         '/dev-api': {
             target: baseUrl,
+            secure: false,
             changeOrigin: true,
             pathRewrite: { '^/dev-api': '/' }
         }

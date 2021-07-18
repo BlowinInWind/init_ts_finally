@@ -43,6 +43,7 @@ const devConfig = merge(commonConfig, {
         clientLogLevel: 'silent',
         progress: false,
         hot: true,
+        hotOnly: true,
         inline: true,
         // 默认浏览器
         open: true,

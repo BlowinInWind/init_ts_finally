@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         /* 基本选项 */
-        "target": "esnext", // 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'
-        "module": "commonjs", // 指定使用模块: 'commonjs', 'amd', 'system', 'umd' or 'es2015'
+        "target": "ES5", // 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'
+        "module": "esnext", // 指定使用模块: 'es2020', 'esnext', 'commonjs', 'amd', 'system', or 'umd'.
         /* 指定要包含在编译中的库文件——引用类库——即申明文件，如果输出的模块方式是 es5，就会默认引入 "dom","es5","scripthost" 。如果在 TS 中想要使用一些 ES6 以上版本的语法，就需要引入相关的类库 */
         "lib": [
             "es5",
@@ -11,17 +11,10 @@
             "esnext",
             "dom",
             "dom.iterable",
-            "scripthost",
-            "es2015.promise",
-            "es2015",
-            "es2016",
-            "es2017",
-            "es2018",
-            "es2019",
-            "es2020"
+            "scripthost"
         ], // ts需要引入的类库
-        "allowJs": true, // todo 允许编译 javascript 文件 不想js报错就去掉
-        "checkJs": false, // todo 报告 javascript 文件中的错误
+        "allowJs": true, // 允许编译 javascript 文件
+        "checkJs": true, // 报告 javascript 文件中的错误
         "jsx": "preserve", // 指定 jsx 代码的生成: 'preserve', 'react-native', or 'react'
         /* react 模式下：直接将 JSX 编译成 JS，会生成 React.createElement 的形式，在使用前不需要再进行转换操作了，输出文件的扩展名为 .js */
         /* preserve 模式下：不会将 JSX 编译成 JS，生成代码中会保留 JSX，以供后续的转换操作使用（比如：Babel）。 另外，输出文件会带有 .jsx 扩展名 */
@@ -48,7 +41,6 @@
         "strictFunctionTypes": false, // 不允许函数参数双向协变
         "noImplicitAny": false, // 在表达式和声明上有隐含的 any类型时报错  //todo js文件编译的要用
         "strictNullChecks": false, // 启用严格的 null 检查
-        "strictBindCallApply": false, // 会在 bind，call，和 apply 时，根据原函数的类型签名对调用进行类型校验。
         "noImplicitThis": true, // 当 this 表达式值为 any 类型的时候，生成一个错误
         "alwaysStrict": true, // 以严格模式检查每个模块，并在每个文件里加入 'use strict'
 
@@ -86,5 +78,5 @@
         "downlevelIteration": true
     },
     "include": ["**/*.ts", "**/*.tsx"],
-    "exclude": ["node_modules", "**/dist/**", "config", "**/*.test.ts", "**/*.js", "**/*.jsx"]
+    "exclude": ["node_modules", "dist", "config", "**/*.js", "**/*.jsx"]
 }
