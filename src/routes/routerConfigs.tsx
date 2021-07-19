@@ -6,6 +6,7 @@ import asyncCom from './asyncCom';
 const Index = asyncCom(React.lazy(() => import('@pages/Index/index')));
 const Index2 = asyncCom(React.lazy(() => import('@pages/Index2')));
 const Index3 = asyncCom(React.lazy(() => import('@pages/Index3')));
+const Index4 = asyncCom(React.lazy(() => import('@pages/Index4')));
 const Login = asyncCom(React.lazy(() => import('@pages/Login')));
 const NotFound = asyncCom(React.lazy(() => import('@pages/404')));
 
@@ -88,6 +89,11 @@ const routers: RouterConfig[] = [
                 path: '/index/test',
                 exact: true,
                 component: Index3
+            },
+            {
+                path: '/index/index4',
+                exact: true,
+                component: Index4
             }
         ]
     },
