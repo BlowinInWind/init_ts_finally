@@ -28,7 +28,9 @@ const publicConfig = {
         // libraryTarget: 'umd' //打包文件加载方式
     },
 
-    // devtool: 'none',
+    devtool: false,
+    // devtool: 'cheap-module-source-map',
+
     mode: 'production',
 
     plugins: [

@@ -98,6 +98,10 @@ const routers: RouterConfig[] = [
         ]
     },
     {
+        path: '/index',
+        redirect: '/index/home'
+    },
+    {
         path: '*',
         hideInMenu: true,
         component: NotFound

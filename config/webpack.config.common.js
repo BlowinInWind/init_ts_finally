@@ -3,8 +3,8 @@
  * @format
  */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// 显示编译时间
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+// const ErrorsOverlayWebpackPlugin = require('error-overlay-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const chalk = require('chalk');
 const fs = require('fs');
@@ -18,6 +18,7 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
     .BundleAnalyzerPlugin;
+// 显示编译时间
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
 const smp = new SpeedMeasurePlugin();
 const typescriptFormatter = require('./typescriptFormatter');
@@ -102,6 +103,8 @@ const commonConfig = {
     performance: {
         hints: false
     },
+
+    bail: isDev,
 
     plugins: [
         // 只加载 `moment/locale/ja.js` 和 `moment/locale/it.js` 优化moment体积
