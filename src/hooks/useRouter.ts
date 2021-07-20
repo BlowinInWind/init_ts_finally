@@ -17,6 +17,7 @@ const useRouter = () => {
         return {
             push: history.push,
             replace: history.replace,
+            listen: history.listen,
             pathname: location.pathname,
             match,
             query: {
