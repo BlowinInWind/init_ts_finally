@@ -8,13 +8,14 @@ import { Router } from 'react-router-dom';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import '@common/assets/styles/index.scss';
 import eruda from 'eruda';
+import history from './utils/history';
 import Root from './routes';
 import store from './store';
-import history from './utils/history';
+import './ReactotronConfig';
 
-eruda.init({
-    useShadowDom: true
-});
+// eruda.init({
+//     useShadowDom: true
+// });
 
 const App = () => {
     return (
