@@ -81,7 +81,6 @@ const VisualViewportComponent: React.FC<VisualViewportComponentProps> = ({
 
         // 支持 VisualViewport API 情况下直接计算
         if (visualViewport != null) {
-            console.log(visualViewport.height + 48);
             // 需要针对 iOS 越界弹性滚动的情况进行边界检查
             styles.left = `${Math.max(
                 0,

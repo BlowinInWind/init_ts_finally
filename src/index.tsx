@@ -10,10 +10,10 @@ import '@common/assets/styles/index.scss';
 import eruda from 'eruda';
 import Root from './routes';
 import store from './store';
-
-eruda.init({
-    useShadowDom: true
-});
+import './ReactotronConfig';
+// eruda.init({
+//     useShadowDom: true
+// });
 
 const App = () => {
     return (
