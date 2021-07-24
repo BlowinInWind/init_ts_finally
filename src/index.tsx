@@ -7,11 +7,11 @@ import { ConfigProvider } from 'antd';
 import { Router } from 'react-router-dom';
 import zhCN from 'antd/lib/locale-provider/zh_CN';
 import '@common/assets/styles/index.scss';
-import eruda from 'eruda';
+// import eruda from 'eruda';
 import history from './utils/history';
 import Root from './routes';
 import store from './store';
-import './ReactotronConfig';
+// import './ReactotronConfig';
 
 // eruda.init({
 //     useShadowDom: true
@@ -45,14 +45,3 @@ const hotDev = (module: any) => {
 hotDev(module);
 
 render(<App />);
-
-// type GetArrTypeKey<T> = {
-//     [P in keyof T]: T[P] extends any[] ? P : never;
-// }[keyof T];
-
-// interface A {
-//     arr: any[];
-//     b: string;
-// }
-
-// type BB = GetArrTypeKey<A>;

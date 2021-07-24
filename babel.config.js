@@ -34,12 +34,7 @@ module.exports = {
                 legacy: true
             }
         ],
-        [
-            '@babel/plugin-proposal-class-properties',
-            {
-                loose: true
-            }
-        ],
+        '@babel/plugin-proposal-class-properties',
         '@babel/plugin-proposal-optional-chaining',
         '@babel/plugin-syntax-dynamic-import',
         [
@@ -50,7 +45,8 @@ module.exports = {
                 style: true
             }
         ],
-        process.env.NODE_ENV === 'development' && 'react-refresh/babel'
+        process.env.NODE_ENV === 'development' &&
+            require.resolve('react-refresh/babel')
     ].filter(Boolean),
 
     // 当前环境将使用 process.env.BABEL_ENV 。当 BABEL_ENV 不可用时，它将回退到 NODE_ENV ，如果不可用，则默认为“ development ”。

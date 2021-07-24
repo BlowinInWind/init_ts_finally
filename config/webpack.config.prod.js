@@ -6,9 +6,8 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 // const glob = require('glob');
 const { merge } = require('webpack-merge');
-const cssnano = require('cssnano');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -72,9 +71,6 @@ const publicConfig = {
         //     }]
         // ),
 
-        // 预编译所有模块到一个闭包中，提升代码在浏览器中的执行速度
-        // new webpack.optimize.ModuleConcatenationPlugin(),
-
         // 在编译出现错误时，使用 NoEmitOnErrorsPlugin 来跳过输出阶段。
         // 这样可以确保输出资源不会包含错误
         new webpack.NoEmitOnErrorsPlugin(),
@@ -86,13 +82,17 @@ const publicConfig = {
             ignoreOrder: true
         }),
 
-        // 压缩css
-        new OptimizeCssAssetsPlugin({
-            cssProcessor: cssnano,
-            cssProcessorPluginOptions: {
-                preset: ['default', { discardComments: { removeAll: true } }]
+        new CssMinimizerWebpackPlugin({
+            minimizerOptions: {
+                preset: [
+                    'default',
+                    {
+                        discardComments: { removeAll: true }
+                    }
+                ]
             },
-            canPrint: true // 是否将插件信息打印到控制台
+            parallel: true,
+            exclude: /node_modules/
         })
     ]
 };

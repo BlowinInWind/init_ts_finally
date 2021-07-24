@@ -16,8 +16,8 @@ const ForkTsCheckerNotifierWebpackPlugin = require('fork-ts-checker-notifier-web
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 // const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
-    .BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin =
+    require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 // 显示编译时间
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin');
 const smp = new SpeedMeasurePlugin();
@@ -106,7 +106,17 @@ const commonConfig = {
 
     bail: isDev,
 
+    target: 'web',
+
+    cache: {
+        type: 'filesystem'
+    },
+
     plugins: [
+        // new webpack.ProvidePlugin({
+        //     process: 'process/browser'
+        // }),
+
         // 只加载 `moment/locale/ja.js` 和 `moment/locale/it.js` 优化moment体积
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
 
@@ -121,7 +131,7 @@ const commonConfig = {
             maxAsyncRequests: 3,
             maxInitialRequests: 3,
             cacheGroups: {
-                vendors: {
+                defaultVendors: {
                     name: 'chunk-vendors',
                     test: /[\\/]node_modules[\\/]/,
                     priority: -10,
@@ -308,61 +318,78 @@ const commonConfig = {
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
-                use: [
-                    // {
-                    //     loader: 'image-webpack-loader',
-                    //     options: {
-                    //         mozjpeg: {
-                    //             progressive: true,
-                    //             quality: 65
-                    //         },
-                    //         optipng: {
-                    //             enabled: true
-                    //         },
-                    //         pngquant: {
-                    //             quality: [0.65, 0.9],
-                    //             speed: 4
-                    //         },
-                    //         gifsicle: {
-                    //             interlaced: false
-                    //         },
-                    //         webp: {
-                    //             quality: 75
-                    //         }
-                    //     }
-                    // },
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            esModule: false,
-                            limit: 0,
-                            name: 'app/images/[name]_[hash:7].[ext]'
-                        }
+                type: 'asset/resource',
+                generator: {
+                    filename: 'app/images/[name]_[hash:7].[ext]'
+                },
+                parser: {
+                    dataUrlCondition: {
+                        maxSize: 1000 * 1024 // 4kb
                     }
-                ]
+                }
+                // use: [
+                // {
+                //     loader: 'image-webpack-loader',
+                //     options: {
+                //         mozjpeg: {
+                //             progressive: true,
+                //             quality: 65
+                //         },
+                //         optipng: {
+                //             enabled: true
+                //         },
+                //         pngquant: {
+                //             quality: [0.65, 0.9],
+                //             speed: 4
+                //         },
+                //         gifsicle: {
+                //             interlaced: false
+                //         },
+                //         webp: {
+                //             quality: 75
+                //         }
+                //     }
+                // },
+                //     {
+                //         loader: 'url-loader',
+                //         options: {
+                //             esModule: false,
+                //             limit: 0,
+                //             name: 'app/images/[name]_[hash:7].[ext]'
+                //         }
+                //     }
+                // ]
             },
             {
                 test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            esModule: false,
-                            name: 'app/files/[name]_[hash:7].[ext]'
-                        }
-                    }
-                ]
+                type: 'asset/resource',
+                generator: {
+                    filename: 'app/files/[name]_[hash:7].[ext]'
+                }
+                // use: [
+                //     {
+                //         loader: 'file-loader',
+                //         options: {
+                //             esModule: false,
+                //             name: 'app/files/[name]_[hash:7].[ext]'
+                //         }
+                //     }
+                // ]
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: {
-                    loader: 'file-loader',
-                    options: {
-                        limit: 15000,
-                        esModule: false,
-                        name: 'app/fonts/[name]_[hash:7].[ext]'
-                    }
+                type: 'asset/resource',
+                generator: {
+                    filename: 'app/fonts/[name]_[hash:7].[ext]'
                 }
+                // use: {
+                //     loader: 'file-loader',
+                //     options: {
+                //         limit: 15000,
+                //         esModule: false,
+                //         name: 'app/fonts/[name]_[hash:7].[ext]'
+                //     }
+                // }
             },
             // 找到第一个匹配的进行解析  设置module与非module形式都支持，根据文件名称区分，文件写了[name].module.scss或者[name].module.less即支持module
             {
@@ -503,5 +530,5 @@ const commonConfig = {
     }
 };
 
-module.exports = smp.wrap(commonConfig);
-// module.exports = commonConfig;
+// module.exports = smp.wrap(commonConfig);
+module.exports = commonConfig;

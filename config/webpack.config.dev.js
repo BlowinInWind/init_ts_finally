@@ -47,6 +47,7 @@ const devConfig = merge(commonConfig, {
         inline: true,
         // 默认浏览器
         open: true,
+        liveReload: false,
         // contentBase: 'dist',
         disableHostCheck: true,
         proxy: config.proxy,

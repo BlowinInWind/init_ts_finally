@@ -21,10 +21,8 @@ const useOnScreen = <T extends Element>(
 ) => {
     const [isIntersecting, setIntersecting] = useState<boolean>(false);
 
-    const [
-        intersectionObserverEntry,
-        setIntersectionObserverEntry
-    ] = useState<IntersectionObserverEntry | null>(null);
+    const [intersectionObserverEntry, setIntersectionObserverEntry] =
+        useState<IntersectionObserverEntry | null>(null);
 
     useEffect(() => {
         if (ref.current && typeof IntersectionObserver === 'function') {
