@@ -8,7 +8,7 @@ import { Button, Input } from 'antd';
 // import { lightTheme, darkTheme } from '../../common/js/index';
 
 const Index = () => {
-    const [t, setTheme] = useState(false);
+    // const [t, setTheme] = useState(false);
     const [a, setA] = useState(1);
     // useEffect(() => {
     //     cssVars({
@@ -31,13 +31,13 @@ const Index = () => {
                 12221
             </Button>
             <Input></Input>1
-            <button
+            {/* <button
                 onClick={() => {
                     setTheme(theme => !theme);
                 }}
             >
                 变色1
-            </button>
+            </button> */}
             <button
                 onClick={() => {
                     history.push('/');

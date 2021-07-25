@@ -112,6 +112,35 @@ const commonConfig = {
         type: 'filesystem'
     },
 
+    optimization: {
+        runtimeChunk: {
+            name: entrypoint => `runtime~${entrypoint.name}`
+        },
+        minimize: false,
+        chunkIds: isDev ? 'named' : 'deterministic',
+        splitChunks: {
+            chunks: 'async',
+            minSize: 20000,
+            minRemainingSize: 0,
+            minChunks: 1,
+            maxAsyncRequests: 30,
+            maxInitialRequests: 30,
+            enforceSizeThreshold: 50000,
+            cacheGroups: {
+                defaultVendors: {
+                    test: /[\\/]node_modules[\\/]/,
+                    priority: -10,
+                    reuseExistingChunk: true
+                },
+                default: {
+                    minChunks: 2,
+                    priority: -20,
+                    reuseExistingChunk: true
+                }
+            }
+        }
+    },
+
     plugins: [
         // new webpack.ProvidePlugin({
         //     process: 'process/browser'
@@ -119,33 +148,6 @@ const commonConfig = {
 
         // 只加载 `moment/locale/ja.js` 和 `moment/locale/it.js` 优化moment体积
         new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
-
-        new webpack.optimize.RuntimeChunkPlugin({
-            name: entrypoint => `runtime-${entrypoint.name}`
-        }),
-
-        new webpack.optimize.SplitChunksPlugin({
-            chunks: 'all',
-            minSize: 30000,
-            minChunks: 1,
-            maxAsyncRequests: 3,
-            maxInitialRequests: 3,
-            cacheGroups: {
-                defaultVendors: {
-                    name: 'chunk-vendors',
-                    test: /[\\/]node_modules[\\/]/,
-                    priority: -10,
-                    chunks: 'initial'
-                },
-                common: {
-                    name: 'chunk-common',
-                    minChunks: 2,
-                    priority: -20,
-                    chunks: 'initial',
-                    reuseExistingChunk: true
-                }
-            }
-        }),
 
         new HtmlWebpackPlugin({
             title: '',
@@ -268,18 +270,8 @@ const commonConfig = {
                 configFile: './tsconfig.json'
             })
         ]
-        // alias: {
-        //     '@hooks': path.resolve(config.appSrc, 'hooks'),
-        //     '@store': path.resolve(config.appSrc, 'store'),
-        //     '@layout': path.resolve(config.appSrc, 'layout'),
-        //     '@routes': path.resolve(config.appSrc, 'routes'),
-        //     '@pages': path.resolve(config.appSrc, 'pages'),
-        //     '@common': path.resolve(config.appSrc, 'common'),
-        //     '@src': path.resolve(config.appSrc),
-        //     '@components': path.resolve(config.appSrc, 'components'),
-        //     '@utils': path.resolve(config.appSrc, 'utils'),
-        //     'react-dom': '@hot-loader/react-dom'
-        // }
+
+        // fallback: { path: require.resolve('path-browserify') }
     },
 
     module: {
@@ -530,5 +522,5 @@ const commonConfig = {
     }
 };
 
-// module.exports = smp.wrap(commonConfig);
-module.exports = commonConfig;
+module.exports = smp.wrap(commonConfig);
+// module.exports = commonConfig;

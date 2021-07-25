@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 /** @format */
 
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import './common/assets/styles/index.scss';
 
 const Component1 = () => {
