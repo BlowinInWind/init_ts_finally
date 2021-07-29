@@ -5,7 +5,6 @@ const czConfig = {
         { value: 'docs', name: '文档: 文档变更' },
         { value: 'style', name: '格式: 代码格式' },
         { value: 'refactor', name: '重构: 代码重构' },
-        { value: 'perf', name: '性能: 改善性能' },
         { value: 'test', name: '测试: 测试代码' },
         {
             value: 'build',
@@ -15,7 +14,7 @@ const czConfig = {
         {
             value: 'ci',
             name:
-                '集成: 更改持续集成软件的配置文件和package中的scripts命令，例如scopes: Travis, Circle等'
+                '集成: 更改持续集成软件的配置文件和package中的scripts命令，例如scopes: Travis, Circle，Dockfile等'
         },
         {
             value: 'revert',
@@ -23,8 +22,8 @@ const czConfig = {
         }
     ],
     scopes: [
-        { name: 'config' },
         { name: 'src' },
+        { name: 'config' },
         { name: 'public' },
         { name: 'dist' },
         { name: 'readme' },

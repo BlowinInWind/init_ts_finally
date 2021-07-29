@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default () => {
-    return <div>1</div>;
+    const [state, setstate] = useState(0);
+
+    return <div>{state}</div>;
 };

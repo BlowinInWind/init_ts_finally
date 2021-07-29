@@ -4,9 +4,6 @@ import BaseComponents from '@layout/index';
 import asyncCom from './asyncCom';
 
 const Index = asyncCom(React.lazy(() => import('@pages/Index/index')));
-const Index2 = asyncCom(React.lazy(() => import('@pages/Index2')));
-const Index3 = asyncCom(React.lazy(() => import('@pages/Index3')));
-const Index4 = asyncCom(React.lazy(() => import('@pages/Index4')));
 const Login = asyncCom(React.lazy(() => import('@pages/Login')));
 const NotFound = asyncCom(React.lazy(() => import('@pages/404')));
 
@@ -61,14 +58,14 @@ const createPermissionRouter = (
 
 const routers: RouterConfig[] = [
     {
-        path: '/login',
-        hideInMenu: true,
-        component: Login
-    },
-    {
         path: '/404',
         hideInMenu: true,
         component: NotFound
+    },
+    {
+        path: '/login',
+        hideInMenu: true,
+        component: Login
     },
     {
         path: '/index',
@@ -76,29 +73,18 @@ const routers: RouterConfig[] = [
         auth: true,
         routes: [
             {
-                path: '/index/name',
-                exact: true,
-                component: Index2
-            },
-            {
                 path: '/index/home',
                 exact: true,
                 component: Index
-            },
-            {
-                path: '/index/test',
-                exact: true,
-                component: Index3
-            },
-            {
-                path: '/index/index4',
-                exact: true,
-                component: Index4
             }
         ]
     },
     {
         path: '/index',
+        redirect: '/index/home'
+    },
+    {
+        path: '/',
         redirect: '/index/home'
     },
     {

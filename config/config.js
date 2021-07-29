@@ -6,8 +6,9 @@ const os = require('os');
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 const colors = require('./styles');
-require('dotenv').config({ path: '.env' });
-const baseUrl = 'http://test.gateway.heimaqf.cn';
+
+// 获取development
+require('dotenv').config({ path: '.env.development' });
 
 module.exports = {
     // 根的js
@@ -31,14 +32,14 @@ module.exports = {
     // 需要代理
     proxy: {
         '/dev-api': {
-            target: baseUrl,
+            target: process.env.RequestUrl,
             secure: false,
             changeOrigin: true,
             pathRewrite: { '^/dev-api': '/' }
         }
     },
 
-    baseUrl: baseUrl,
+    baseUrl: process.env.RequestUrl,
     //node_modules
     appNodeModules: resolveApp('node_modules'),
     tsConfig: resolveApp('tsconfig.json'),
