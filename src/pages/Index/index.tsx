@@ -1,9 +1,7 @@
-/** @format */
+import React, { useState } from 'react';
 
-import React from 'react';
+export default () => {
+    const [state, setstate] = useState(0);
 
-const Index = () => {
-    return <div className="text_color"></div>;
+    return <div>{state}</div>;
 };
-
-export default Index;
