@@ -51,7 +51,6 @@ const publicConfig = {
             filename: '/app/js/[name].gz[query]',
             // 压缩后缀
             algorithm: 'gzip',
-            cache: true,
             test: new RegExp('\\.(js|css)$'),
             // 只处理比这个值大的资源。按字节计算
             threshold: 10240,

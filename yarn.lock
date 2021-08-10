@@ -2766,6 +2766,11 @@ babel-preset-jest@^26.6.2:
     babel-plugin-jest-hoist "^26.6.2"
     babel-preset-current-node-syntax "^1.0.0"
 
+baili_hooks@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/baili_hooks/-/baili_hooks-1.0.1.tgz#f107cc639bc158f204ab80bf810b7b3bab03b7a5"
+  integrity sha512-F0C/AC+8X7mSAQDwRr9tEo4wI9dxONvrtgm1/Ycb+FBC82IskpdZwGgjhZEPM+KXZhBtzsMwlxakzVIBkjvM3g==
+
 balanced-match@^1.0.0, balanced-match@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"

@@ -1,17 +1,17 @@
 /** @format */
 
 import React, { useState } from 'react';
-import { useHistory } from 'react-router';
 import './common/assets/styles/index.scss';
 // import cssVars from 'css-vars-ponyfill';
 import { Button, Input } from 'antd';
 // import { lightTheme, darkTheme } from '../../common/js/index';
+import { useRouter } from 'baili_hooks';
 
 const Index = () => {
+    const { query, replace } = useRouter();
+
     const [t, setTheme] = useState(false);
     const [a, setA] = useState(1);
-
-    const history = useHistory();
 
     return (
         <div className="text_color">
@@ -34,7 +34,7 @@ const Index = () => {
             <button
                 onClick={() => {
                     localStorage.setItem('name', '11');
-                    history.push('/index/home');
+                    replace('/index/home');
                 }}
             >
                 登11
