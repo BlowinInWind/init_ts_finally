@@ -109,3 +109,7 @@ ESLint：作代码质量检测、编码风格约束等；
 └─ tsconfig.json
 
 ```
+
+npx husky install
+npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
+npx husky add .husky/pre-commit "npm run test:unit"
