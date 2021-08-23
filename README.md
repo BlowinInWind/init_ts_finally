@@ -107,7 +107,6 @@ ESLint：作代码质量检测、编码风格约束等；
 │     ├─ styles.ts
 │     └─ utils.ts
 └─ tsconfig.json
-
 ```
 
 npx husky install
