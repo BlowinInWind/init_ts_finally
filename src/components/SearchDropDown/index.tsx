@@ -26,7 +26,6 @@ const SearchDropDown: React.FC<SearchDropDownInterface> = ({
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) => {
         setIsOpened(true);
-        // console.log(e.target.value);
     };
 
     // 防抖
