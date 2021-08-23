@@ -56,6 +56,7 @@ const publicConfig = {
             threshold: 10240,
             // 只有压缩率比这个值小的资源才会被处理 （minRatio = 压缩大小 / 原始大小）
             minRatio: 0.8,
+            exclude: /node_modules/,
             // 是否删除原资源
             deleteOriginalAssets: false
         }),

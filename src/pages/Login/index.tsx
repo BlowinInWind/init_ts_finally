@@ -24,13 +24,13 @@ const Index = () => {
                 12221
             </Button>
             <Input></Input>1
-            <button
+            {/* <button
                 onClick={() => {
                     setTheme(theme => !theme);
                 }}
             >
                 变色1
-            </button>
+            </button> */}
             <button
                 onClick={() => {
                     localStorage.setItem('name', '11');

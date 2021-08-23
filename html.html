@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            #outer {
+                width: 100px;
+                height: 100px;
+                background-color: rebeccapurple;
+            }
+
+            #inner {
+                width: 50px;
+                height: 50px;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="inner"></div>
+        </div>
+    </body>
+
+    <script>
+        const outer = document.getElementById('outer');
+        const inner = document.getElementById('inner');
+        outer.onclick = () => {
+            console.log('outer ------   onclick');
+        };
+
+        inner.onclick = () => {
+            console.log('inner ------   onclick');
+        };
+
+        inner.onclick = () => {
+            console.log('inner1 ------   onclick');
+        };
+
+        // inner.addEventListener(
+        //     'click',
+        //     function (event) {
+        //         event.preventDefault();
+
+        //         console.log('click inner');
+        //         console.log('innerEvent', event.target);
+        //         console.log('innerThis', this === inner);
+        //     },
+        //     true
+        // );
+
+        // outer.addEventListener(
+        //     'click',
+        //     function (event) {
+        //         event.preventDefault();
+
+        //         console.log('click outer');
+        //         console.log('outerEvent', event.target);
+        //         console.log('outerThis', this === outer);
+        //     },
+        //     true
+        // );
+
+        // document.addEventListener(
+        //     'click',
+        //     () => {
+        //         console.log('click document cap');
+        //     },
+        //     true
+        // );
+
+        inner.addEventListener('click', function (event) {
+            console.log('click inner');
+            console.log('innerEvent', event.target);
+            console.log('innerThis', this === inner);
+        });
+
+        outer.addEventListener('click', function (event) {
+            console.log('click outer');
+            console.log('outerEvent', event.target);
+            console.log('outerThis', this === outer);
+        });
+
+        // document.addEventListener('click', () => {
+        //     console.log('click document');
+        // });
+    </script>
+</html>

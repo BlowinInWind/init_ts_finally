@@ -2,8 +2,7 @@
 import React, { useState, useRef } from 'react';
 import { Input } from 'antd';
 import classnames from 'classnames';
-import useDebounce from '@hooks/useDebounce';
-import useOnClickOutside from '@hooks/useOnClickOutside';
+import { useDebounce, useOnClickOutside } from 'baili_hooks';
 import DropDown from './DropDown';
 import './index.scss';
 
