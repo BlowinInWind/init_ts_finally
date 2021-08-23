@@ -3,12 +3,6 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged",
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-        }
-    },
     "lint-staged": {
         "src/**/*.{jsx,txs,ts,js,md}": [
             "npm run prettier",
