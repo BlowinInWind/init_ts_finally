@@ -69,15 +69,7 @@ const styleLoader = (options = {}) => {
 };
 
 const sassLoader = () => {
-    return [
-        'sass-loader'
-        // {
-        //     loader: 'sass-resources-loader',
-        //     options: {
-        //         resources: `${config.appSrc}/common/assets/styles/variable.scss`
-        //     }
-        // }
-    ].filter(Boolean);
+    return ['sass-loader'].filter(Boolean);
 };
 
 const lessLoader = (options = {}) => {
@@ -86,12 +78,6 @@ const lessLoader = (options = {}) => {
             loader: 'less-loader',
             options
         }
-        // {
-        //     loader: 'sass-resources-loader',
-        //     options: {
-        //         resources: `${config.appSrc}/common/assets/styles/variable.less`
-        //     }
-        // }
     ].filter(Boolean);
 };
 
@@ -100,46 +86,41 @@ const commonConfig = {
         app: config.appIndexJs
     },
 
-    performance: {
-        hints: false
-    },
-
-    bail: isDev,
-
-    target: 'web',
+    target: process.env.NODE_ENV === 'development' ? 'web' : 'browserslist',
 
     cache: {
         type: 'filesystem'
     },
 
-    optimization: {
-        runtimeChunk: {
-            name: entrypoint => `runtime~${entrypoint.name}`
-        },
-        minimize: false,
-        chunkIds: isDev ? 'named' : 'deterministic',
-        splitChunks: {
-            chunks: 'async',
-            minSize: 20000,
-            minRemainingSize: 0,
-            minChunks: 1,
-            maxAsyncRequests: 30,
-            maxInitialRequests: 30,
-            enforceSizeThreshold: 50000,
-            cacheGroups: {
-                defaultVendors: {
-                    test: /[\\/]node_modules[\\/]/,
-                    priority: -10,
-                    reuseExistingChunk: true
-                },
-                default: {
-                    minChunks: 2,
-                    priority: -20,
-                    reuseExistingChunk: true
-                }
-            }
-        }
-    },
+    // optimization: {
+    //     usedExports: true,
+    //     runtimeChunk: {
+    //         name: entrypoint => `runtime~${entrypoint.name}`
+    //     },
+    //     minimize: false,
+    //     chunkIds: isDev ? 'named' : 'deterministic',
+    //     splitChunks: {
+    //         chunks: 'async',
+    //         minSize: 20000,
+    //         minRemainingSize: 0,
+    //         minChunks: 1,
+    //         maxAsyncRequests: 30,
+    //         maxInitialRequests: 30,
+    //         enforceSizeThreshold: 50000,
+    //         cacheGroups: {
+    //             defaultVendors: {
+    //                 test: /[\\/]node_modules[\\/]/,
+    //                 priority: -10,
+    //                 reuseExistingChunk: true
+    //             },
+    //             default: {
+    //                 minChunks: 2,
+    //                 priority: -20,
+    //                 reuseExistingChunk: true
+    //             }
+    //         }
+    //     }
+    // },
 
     plugins: [
         // new webpack.ProvidePlugin({
@@ -201,8 +182,6 @@ const commonConfig = {
             skipSuccessful: true
         }),
 
-        new FriendlyErrorsWebpackPlugin(),
-
         new ESLintPlugin({
             context: path.resolve(__dirname, '../'),
             emitError: !isDev,
@@ -244,18 +223,6 @@ const commonConfig = {
                 statsOptions: null,
                 logLevel: 'info' // 日志级别。可以是'信息'，'警告'，'错误'或'沉默'。
             })
-
-        // new HtmlWebpackTagsPlugin({
-        //     tags: [
-        //         isDev ? './public/js/baiduMap.js' : 'public/js/baiduMap.js',
-        //         {
-        //             path:
-        //                 'http://api.map.baidu.com/api?v=3.0&ak=moMIflSL2yGiq3VwQ3bynEKE7gl2cjQw',
-        //             type: 'js'
-        //         },
-        //     ],
-        //     append: false
-        // })
     ].filter(Boolean),
 
     resolve: {
@@ -270,7 +237,6 @@ const commonConfig = {
                 configFile: './tsconfig.json'
             })
         ]
-
         // fallback: { path: require.resolve('path-browserify') }
     },
 
@@ -319,38 +285,6 @@ const commonConfig = {
                         maxSize: 1000 * 1024 // 4kb
                     }
                 }
-                // use: [
-                // {
-                //     loader: 'image-webpack-loader',
-                //     options: {
-                //         mozjpeg: {
-                //             progressive: true,
-                //             quality: 65
-                //         },
-                //         optipng: {
-                //             enabled: true
-                //         },
-                //         pngquant: {
-                //             quality: [0.65, 0.9],
-                //             speed: 4
-                //         },
-                //         gifsicle: {
-                //             interlaced: false
-                //         },
-                //         webp: {
-                //             quality: 75
-                //         }
-                //     }
-                // },
-                //     {
-                //         loader: 'url-loader',
-                //         options: {
-                //             esModule: false,
-                //             limit: 0,
-                //             name: 'app/images/[name]_[hash:7].[ext]'
-                //         }
-                //     }
-                // ]
             },
             {
                 test: /\.(mp4|webm|ogg|mp3|wav|flac|aac)(\?.*)?$/i,
@@ -358,15 +292,6 @@ const commonConfig = {
                 generator: {
                     filename: 'app/files/[name]_[hash:7].[ext]'
                 }
-                // use: [
-                //     {
-                //         loader: 'file-loader',
-                //         options: {
-                //             esModule: false,
-                //             name: 'app/files/[name]_[hash:7].[ext]'
-                //         }
-                //     }
-                // ]
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -374,47 +299,10 @@ const commonConfig = {
                 generator: {
                     filename: 'app/fonts/[name]_[hash:7].[ext]'
                 }
-                // use: {
-                //     loader: 'file-loader',
-                //     options: {
-                //         limit: 15000,
-                //         esModule: false,
-                //         name: 'app/fonts/[name]_[hash:7].[ext]'
-                //     }
-                // }
             },
             // 找到第一个匹配的进行解析  设置module与非module形式都支持，根据文件名称区分，文件写了[name].module.scss或者[name].module.less即支持module
             {
                 oneOf: [
-                    // {
-                    //     // sassmodule
-                    //     test: sassModuleReg,
-                    //     use: [
-                    //         ...styleLoader({
-                    //             modules: {
-                    //                 localIdentName: '[local]--[hash:base64:5]'
-                    //             }
-                    //         }),
-                    //         ...sassLoader()
-                    //     ],
-                    //     include: config.appSrc
-                    // },
-                    // {
-                    //     test: lessModuleReg,
-                    //     use: [
-                    //         ...styleLoader({
-                    //             modules: {
-                    //                 localIdentName: '[local]--[hash:base64:5]'
-                    //             }
-                    //         }),
-                    //         ...lessLoader({
-                    //             lessOptions: {
-                    //                 javascriptEnabled: true
-                    //             }
-                    //         })
-                    //     ],
-                    //     include: config.appSrc
-                    // },
                     {
                         // sass
                         test: sassReg,
@@ -469,18 +357,6 @@ const commonConfig = {
                         include: config.appSrc
                     },
 
-                    // {
-                    //     // cssmodule
-                    //     test: cssModuleReg,
-                    // use: [
-                    //     ...styleLoader({
-                    //         modules: {
-                    //             localIdentName: '[local]--[hash:base64:5]'
-                    //         }
-                    //     })
-                    // ],
-                    //     include: config.appSrc
-                    // },
                     {
                         // css
                         test: cssReg,
@@ -492,14 +368,14 @@ const commonConfig = {
                                     localIdentName: '[local]--[hash:base64:5]'
                                 }
                             })
-                        ]
-                        // include: config.appSrc
+                        ],
+                        include: config.appSrc
                     },
                     {
                         // css
                         test: cssReg,
-                        use: [...styleLoader()]
-                        // include: config.appSrc
+                        use: [...styleLoader()],
+                        include: config.appSrc
                     },
                     {
                         // antd等第三方less
@@ -522,5 +398,5 @@ const commonConfig = {
     }
 };
 
-module.exports = smp.wrap(commonConfig);
-// module.exports = commonConfig;
+// module.exports = smp.wrap(commonConfig);
+module.exports = commonConfig;

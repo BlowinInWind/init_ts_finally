@@ -17,6 +17,8 @@ module.exports = {
     appHtml: resolveApp('public/index.html'),
     // 打包文件夹
     appbuild: resolveApp('dist'),
+    // 配置目录
+    config: resolveApp('config'),
     // 项目主目录
     appSrc: resolveApp('src'),
     // 静态文件比如百度地图js，d3等

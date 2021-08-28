@@ -1,6 +1,8 @@
 /** @format */
 const { merge } = require('webpack-merge');
 const chalk = require('chalk');
+const fs = require('fs');
+const webpack = require('webpack');
 // const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin');
 const portfinder = require('portfinder');
 const config = require('./config');
@@ -8,56 +10,51 @@ const commonConfig = require('./webpack.config.common.js');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const getLocalHostnameAndIp = require('./getLocalIp');
 
-const devConfig = merge(commonConfig, {
-    // devtool: 'cheap-module-source-map',
-    devtool: 'eval-cheap-module-source-map',
-    mode: 'development',
+const devConfig = merge(
+    {
+        // devtool: 'cheap-module-source-map',
+        devtool: 'eval-cheap-module-source-map',
+        mode: 'development',
 
-    output: {
-        path: config.appbuild,
-        filename: 'app/[name].bundle.js',
-        chunkFilename: 'app/[name].chunk.js',
-        publicPath: '/'
-    },
-
-    plugins: [
-        new ReactRefreshWebpackPlugin({
-            // overlay: false,
-            exclude: /node_modules/
-        })
-    ],
-
-    devServer: {
-        host: config.host,
-        port: config.port,
-        historyApiFallback: true,
-        // 错误覆盖到界面上
-        overlay: false,
-        // overlay: {
-        //     warnings: false,
-        //     errors: true
-        // },
-        quiet: false, // 启用 quiet 后，除了初始启动信息之外的任何内容都不会被打印到控制台。这也意味着来自 webpack 的错误或警告在控制台不可见。
-        compress: true,
-        // 阻止所有这些消息显示
-        clientLogLevel: 'silent',
-        progress: false,
-        hot: true,
-        hotOnly: true,
-        inline: true,
-        // 默认浏览器
-        open: true,
-        liveReload: false,
-        // contentBase: 'dist',
-        disableHostCheck: true,
-        proxy: config.proxy,
-        // 允许被主应用跨域fetch请求到
-        headers: {
-            'Access-Control-Allow-Origin': '*'
+        output: {
+            path: config.appbuild,
+            filename: 'app/[name].bundle.js',
+            chunkFilename: 'app/[name].chunk.js',
+            publicPath: '/'
         },
-        stats: 'errors-only'
-    }
-});
+
+        plugins: [
+            new ReactRefreshWebpackPlugin({
+                overlay: false
+            }),
+            new webpack.HotModuleReplacementPlugin()
+        ],
+
+        devServer: {
+            host: config.host,
+            port: config.port,
+            historyApiFallback: true,
+            // http2: true,
+            // https: {
+            //     key: fs.readFileSync(
+            //         `${config.config}/local.jiangtong.tech-key.pem`
+            //     ),
+            //     cert: fs.readFileSync(`${config.config}/local.jiangtong.tech.pem`)
+            // },
+            compress: true,
+            hot: true,
+            // 默认浏览器
+            open: true,
+            liveReload: false,
+            proxy: config.proxy,
+            // 允许被主应用跨域fetch请求到
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+        }
+    },
+    commonConfig
+);
 
 // 自动寻找空余端口
 module.exports = new Promise((resolve, reject) => {
@@ -68,7 +65,6 @@ module.exports = new Promise((resolve, reject) => {
         else {
             devConfig.devServer.port = port;
             devConfig.plugins = [
-                ...devConfig.plugins,
                 // 显示那个小文字
                 function () {
                     this.hooks.done.tap('done', stats => {
@@ -105,9 +101,12 @@ module.exports = new Promise((resolve, reject) => {
                             // process.exit(0);
                         }
                     });
-                }
+                },
+                ...devConfig.plugins
             ];
         }
         resolve(devConfig);
     });
 });
+
+console.log(devConfig);
