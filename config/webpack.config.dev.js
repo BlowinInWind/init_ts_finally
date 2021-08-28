@@ -3,7 +3,6 @@ const { merge } = require('webpack-merge');
 const chalk = require('chalk');
 const fs = require('fs');
 const webpack = require('webpack');
-// const HtmlWebpackTagsPlugin = require('html-webpack-tags-plugin');
 const portfinder = require('portfinder');
 const config = require('./config');
 const commonConfig = require('./webpack.config.common.js');

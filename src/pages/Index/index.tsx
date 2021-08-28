@@ -3,8 +3,6 @@ import React, { useState } from 'react';
 export default () => {
     const [state, setstate] = useState(0);
 
-    console.log('11');
-
     return (
         <div>
             {state}

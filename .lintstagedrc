@@ -1,3 +1,9 @@
 {
-    "*.tsx": "eslint --fix"
+    "*.{jsx,ts,js,tsx}": [
+        "npm run prettier",
+        "npm run fix"
+    ],
+    "*.{css,less,scss}": [
+        "npm run prettier"
+    ]
 }
