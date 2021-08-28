@@ -1,5 +1,5 @@
 {
-    "*.{jsx,txs,ts,js,md}": [
+    "*.{jsx,tsx,ts,js,md}": [
         "npm run prettier",
         "npm run fix"
     ]
