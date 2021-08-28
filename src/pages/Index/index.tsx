@@ -12,7 +12,7 @@ export default () => {
                         setstate(state + 1);
                     }}
                 >
-                    button1
+                    button
                 </button>
             </div>
         </div>
