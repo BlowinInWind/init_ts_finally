@@ -4,7 +4,6 @@
  */
 
 // eslint-disable-next-line import/no-extraneous-dependencies
-// const glob = require('glob');
 const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
