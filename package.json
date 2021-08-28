@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "lint-staged": {
-        "*.{jsx,txs,ts,js,md}": [
-            "npm run prettier",
-            "npm run fix"
+        "*.{js,jsx,ts,tsx}": [
+            "eslint",
+            "prettier --write"
         ]
     },
     "config": {
@@ -19,8 +19,8 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prettier": "prettier --write",
-        "fix": "eslint --ext .js,.ts,.tsx,.jsx --fix",
+        "prettier": "prettier --write ./src",
+        "fix": "eslint --ext .js,.ts,.tsx,.jsx src/ --fix",
         "jscpd": "jscpd ./src/*",
         "prepare": "husky install",
         "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.config.dev.js",
