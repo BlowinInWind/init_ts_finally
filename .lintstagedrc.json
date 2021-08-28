@@ -1,9 +1,0 @@
-{
-    "*.jsx": ["npm run prettier", "npm run fix"],
-    "*.ts": ["npm run prettier", "npm run fix"],
-    "*.tsx": ["npm run prettier", "npm run fix"],
-    "*.js": ["npm run prettier", "npm run fix"],
-    "*.scss": ["npm run prettier"],
-    "*.css": ["npm run prettier"],
-    "*.less": ["npm run prettier"]
-}

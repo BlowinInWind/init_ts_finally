@@ -1,0 +1,3 @@
+{
+    "*.tsx": ["npm run prettier", "npm run fix"]
+}
