@@ -1,3 +1,3 @@
 {
-    "*.tsx": ["npm run prettier", "npm run fix"]
+    "*.tsx": "eslint --fix"
 }
