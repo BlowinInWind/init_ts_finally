@@ -11,7 +11,6 @@ import '@common/assets/styles/index.scss';
 import history from './utils/history';
 import Root from './routes';
 import store from './store';
-// import './ReactotronConfig';
 
 // eruda.init({
 //     useShadowDom: true
