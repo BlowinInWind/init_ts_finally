@@ -32,7 +32,7 @@ const render = (Component: React.ReactElement) => {
     ReactDOM.render(Component, document.getElementById('app'));
 };
 
-console.log('1');
+console.log('12');
 
 // 热更新
 const hotDev = (module: any) => {
