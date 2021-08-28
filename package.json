@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "lint-staged": {
-        "src/**/*.{jsx,txs,ts,js,md}": [
+        "*.{jsx,txs,ts,js,md}": [
             "npm run prettier",
             "npm run fix"
         ]
