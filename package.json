@@ -3,12 +3,6 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "lint-staged": {
-        "*.{js,jsx,ts,tsx}": [
-            "eslint",
-            "prettier --write"
-        ]
-    },
     "config": {
         "commitizen": {
             "path": "node_modules/cz-customizable"
