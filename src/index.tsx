@@ -9,6 +9,7 @@ import zhCN from 'antd/lib/locale-provider/zh_CN';
 import '@common/assets/styles/index.scss';
 // import eruda from 'eruda';
 import history from './utils/history';
+import history1 from './utils/history1';
 import Root from './routes';
 import store from './store';
 
