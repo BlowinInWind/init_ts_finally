@@ -19,8 +19,8 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prettier": "prettier --write ./src",
-        "fix": "eslint --ext .js,.ts,.tsx,.jsx src/ --fix",
+        "prettier": "prettier --write",
+        "fix": "eslint --ext .js,.ts,.tsx,.jsx --fix",
         "jscpd": "jscpd ./src/*",
         "prepare": "husky install",
         "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.config.dev.js",
