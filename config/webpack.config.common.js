@@ -92,36 +92,6 @@ const commonConfig = {
         type: 'filesystem'
     },
 
-    // optimization: {
-    //     usedExports: true,
-    //     runtimeChunk: {
-    //         name: entrypoint => `runtime~${entrypoint.name}`
-    //     },
-    //     minimize: false,
-    //     chunkIds: isDev ? 'named' : 'deterministic',
-    //     splitChunks: {
-    //         chunks: 'async',
-    //         minSize: 20000,
-    //         minRemainingSize: 0,
-    //         minChunks: 1,
-    //         maxAsyncRequests: 30,
-    //         maxInitialRequests: 30,
-    //         enforceSizeThreshold: 50000,
-    //         cacheGroups: {
-    //             defaultVendors: {
-    //                 test: /[\\/]node_modules[\\/]/,
-    //                 priority: -10,
-    //                 reuseExistingChunk: true
-    //             },
-    //             default: {
-    //                 minChunks: 2,
-    //                 priority: -20,
-    //                 reuseExistingChunk: true
-    //             }
-    //         }
-    //     }
-    // },
-
     plugins: [
         // new webpack.ProvidePlugin({
         //     process: 'process/browser'
@@ -258,21 +228,6 @@ const commonConfig = {
                 ],
                 exclude: /node_modules/,
                 include: config.appSrc
-            },
-            {
-                test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                    {
-                        loader: 'babel-loader'
-                    },
-                    {
-                        loader: '@svgr/webpack',
-                        options: {
-                            babel: false,
-                            icon: true
-                        }
-                    }
-                ]
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)$/,
