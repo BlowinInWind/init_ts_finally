@@ -12,6 +12,7 @@
         }
     },
     "scripts": {
+        "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
         "test": "echo \"Error: no test specified\" && exit 1",
         "prettier": "prettier --write ./src",
         "fix": "eslint --ext .js,.ts,.tsx,.jsx src/ --fix",

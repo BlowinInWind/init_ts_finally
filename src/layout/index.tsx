@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const Index: React.FC = props => {
+const Index: React.FC = (props: any) => {
     return (
         <>
             {props.children}
