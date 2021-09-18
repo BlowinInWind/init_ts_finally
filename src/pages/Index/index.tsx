@@ -1,20 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default () => {
-    const [state, setstate] = useState(0);
-
-    return (
-        <div>
-            {state}
-            <div>
-                <button
-                    onClick={() => {
-                        setstate(state + 1);
-                    }}
-                >
-                    button
-                </button>
-            </div>
-        </div>
-    );
+    return <div>Main</div>;
 };
