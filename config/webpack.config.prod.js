@@ -1,8 +1,3 @@
-/**
- *
- * @format
- */
-
 // eslint-disable-next-line import/no-extraneous-dependencies
 const { merge } = require('webpack-merge');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
