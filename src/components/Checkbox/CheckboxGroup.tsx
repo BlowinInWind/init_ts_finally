@@ -12,6 +12,7 @@ interface OptionsProps {
 export interface CheckboxGroupProps {
     options?: OptionsProps[] | string[];
     onChange?(...args): void;
+    children: React.ReactElement;
     value?: string[] | number[];
 }
 

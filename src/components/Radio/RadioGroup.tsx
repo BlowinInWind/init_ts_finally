@@ -12,6 +12,7 @@ interface OptionsProps {
 export interface RadioGroupProps {
     options?: OptionsProps[] | string[];
     onChange?(...args): void;
+    children: React.ReactElement;
     value?: string | number;
 }
 

@@ -5,7 +5,10 @@ import asyncCom from './asyncCom';
 
 const Index = asyncCom(React.lazy(() => import('@pages/Index/index')));
 const Main = asyncCom(React.lazy(() => import('@pages/Main')));
+const Error = asyncCom(React.lazy(() => import('@pages/Error')));
 const Login = asyncCom(React.lazy(() => import('@pages/Login')));
+const Mode = asyncCom(React.lazy(() => import('@pages/Mode')));
+const Hooks = asyncCom(React.lazy(() => import('@pages/Hooks')));
 const NotFound = asyncCom(React.lazy(() => import('@pages/404')));
 
 export interface RouterConfig extends RouteProps {
@@ -76,6 +79,18 @@ const routers: RouterConfig[] = [
             {
                 path: '/index/home',
                 component: Index
+            },
+            {
+                path: '/index/error',
+                component: Error
+            },
+            {
+                path: '/index/hooks',
+                component: Hooks
+            },
+            {
+                path: '/index/mode',
+                component: Mode
             },
             {
                 path: '/index/main/:id',
