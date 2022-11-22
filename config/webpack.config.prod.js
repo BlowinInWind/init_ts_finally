@@ -35,7 +35,7 @@ const publicConfig = {
             name: entrypoint => `runtime~${entrypoint.name}`
         },
         minimize: false,
-        chunkIds: isDev ? 'named' : 'deterministic',
+        chunkIds: 'deterministic',
         splitChunks: {
             chunks: 'async',
             minSize: 20000,

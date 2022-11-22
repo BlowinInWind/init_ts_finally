@@ -99,12 +99,12 @@ class BaseRequest {
                         clearLocal();
                         const { pathname } = history.location;
                         window.location.reload();
-                        history.replace({
-                            pathname: '/',
-                            state: {
-                                redirect: pathname
-                            }
-                        });
+                        // history.replace({
+                        //     pathname: '/',
+                        //     state: {
+                        //         redirect: pathname
+                        //     }
+                        // });
                     } else {
                         resolve(response);
                     }

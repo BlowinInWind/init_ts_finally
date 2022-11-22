@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import { Input } from 'antd';
 import classnames from 'classnames';
-import { useDebounce, useOnClickOutside } from 'baili_hooks';
+// import { useDebounce, useOnClickOutside } from 'baili_hooks';
 import DropDown from './DropDown';
 import './index.scss';
 
@@ -18,22 +18,22 @@ const SearchDropDown: React.FC<SearchDropDownInterface> = ({
     render
 }) => {
     const classNames = classnames(classes, 'default_search_wrapper');
-    const ref = useRef();
-    useOnClickOutside(ref, () => setIsOpened(false));
+    // const ref = useRef();
+    // useOnClickOutside(ref, () => setIsOpened(false));
 
-    const [isOpened, setIsOpened] = useState(false);
-    const onInputChange = (
-        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-        setIsOpened(true);
-    };
+    // const [isOpened, setIsOpened] = useState(false);
+    // const onInputChange = (
+    //     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    // ) => {
+    //     setIsOpened(true);
+    // };
 
     // 防抖
-    const { run } = useDebounce(onInputChange, 500);
+    // const { run } = useDebounce(onInputChange, 500);
 
     return (
-        <div ref={ref} className={classNames}>
-            <Input onChange={run}></Input>
+        <div className={classNames}>
+            {/* <Input onChange={run}></Input>
             <DropDown isOpened={isOpened}>
                 <div>
                     {render
@@ -42,7 +42,7 @@ const SearchDropDown: React.FC<SearchDropDownInterface> = ({
                             : null
                         : null}
                 </div>
-            </DropDown>
+            </DropDown> */}
         </div>
     );
 };

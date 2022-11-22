@@ -8,7 +8,7 @@ import './common/assets/styles/index.scss';
 // import cssVars from 'css-vars-ponyfill';
 import { Button, Input } from 'antd';
 // import { lightTheme, darkTheme } from '../../common/js/index';
-import { useRouter } from 'baili_hooks';
+import useRouter from '@hooks/useRouter';
 
 function pPipe(...functions) {
     if (functions.length === 0) {
@@ -82,7 +82,7 @@ const pipelineAll = pPipe(pipeline1, pipeline2);
 })();
 
 const Index = () => {
-    const { query, replace } = useRouter();
+    const { replace } = useRouter();
 
     const [t, setTheme] = useState(false);
     const [a, setA] = useState(1);

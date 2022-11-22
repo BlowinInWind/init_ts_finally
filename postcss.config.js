@@ -8,6 +8,10 @@ module.exports = {
             preserve: true
         }),
 
+        // require('./postcss-simple-px2rem.js')({
+        //     base: 12
+        // }),
+
         require('postcss-preset-env')(),
 
         require('autoprefixer')({

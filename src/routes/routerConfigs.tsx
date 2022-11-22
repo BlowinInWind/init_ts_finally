@@ -5,10 +5,12 @@ import asyncCom from './asyncCom';
 
 const Index = asyncCom(React.lazy(() => import('@pages/Index/index')));
 const Main = asyncCom(React.lazy(() => import('@pages/Main')));
+const AntdDemo = asyncCom(React.lazy(() => import('@pages/AntdDemo')));
+const Decorator = asyncCom(React.lazy(() => import('@pages/Decorator')));
 const Login = asyncCom(React.lazy(() => import('@pages/Login')));
 const NotFound = asyncCom(React.lazy(() => import('@pages/404')));
 
-export interface RouterConfig extends RouteProps {
+export type RouterConfig = RouteProps & {
     auth?: boolean; // 登录验证
     key?: string;
     name?: string; // 侧边栏名字
@@ -17,7 +19,7 @@ export interface RouterConfig extends RouteProps {
     routes?: Array<RouterConfig>; // 子路由数组
     redirect?: string; // 重定向地址
     hideInMenu?: boolean; // 在菜单中隐藏路由 可以用于详情页配置
-}
+};
 
 /**
  * 根据数据重整路由 判断是第一个重定向还是404
@@ -45,41 +47,43 @@ const createPermissionRouter = (
             {
                 path: '*',
                 hideInMenu: true,
-                component: NotFound
+                element: <NotFound></NotFound>
             }
         ];
         return item;
     }
     return {
-        ...item,
+        ...item
         // path: path + item.path,
-        exact: true
+        // exact: true
     };
 };
 
 const routers: RouterConfig[] = [
     {
-        path: '/404',
-        hideInMenu: true,
-        component: NotFound
-    },
-    {
-        path: '/login',
-        hideInMenu: true,
-        component: Login
-    },
-    {
         path: '/index',
-        component: BaseComponents,
+        element: <BaseComponents></BaseComponents>,
         auth: true,
         routes: [
             {
-                path: '/index/home',
-                component: Index
+                path: 'home',
+                auth: true,
+                element: <Index></Index>
             },
             {
-                path: '/index/main/:id',
-                component: Main
+                path: 'main/:id',
+                auth: true,
+                element: <Main></Main>
+            },
+            {
+                path: 'antd',
+                auth: true,
+                element: <AntdDemo></AntdDemo>
+            },
+            {
+                path: 'decorator',
+                auth: true,
+                element: <Decorator></Decorator>
             }
         ]
     },
@@ -92,9 +96,19 @@ const routers: RouterConfig[] = [
         redirect: '/index/home'
     },
     {
+        path: '/404',
+        hideInMenu: true,
+        element: <NotFound></NotFound>
+    },
+    {
+        path: '/login',
+        hideInMenu: true,
+        element: <Login></Login>
+    },
+    {
         path: '*',
         hideInMenu: true,
-        component: NotFound
+        element: <NotFound></NotFound>
     }
 ];
 

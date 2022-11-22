@@ -3,7 +3,7 @@
  * @format
  */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+// const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 // const ErrorsOverlayWebpackPlugin = require('error-overlay-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const chalk = require('chalk');
@@ -85,8 +85,6 @@ const commonConfig = {
     entry: {
         app: config.appIndexJs
     },
-
-    target: process.env.NODE_ENV === 'development' ? 'web' : 'browserslist',
 
     cache: {
         type: 'filesystem'
@@ -215,7 +213,7 @@ const commonConfig = {
             {
                 test: /\.(js|ts)x?$/,
                 use: [
-                    'cache-loader',
+                    // 'cache-loader',
                     {
                         loader: 'thread-loader'
                     },
