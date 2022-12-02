@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConfigProvider } from 'antd';
 import { BrowserRouter, Routes } from 'react-router-dom';
-import zhCN from 'antd/lib/locale-provider/zh_CN';
 import '@common/assets/styles/index.scss';
 import Root from './routes';
 import store from './store';
 
 const App = () => {
     return (
-        <ConfigProvider locale={zhCN}>
+        <ConfigProvider>
             <Provider store={store}>
                 <BrowserRouter>
                     <Routes>{Root}</Routes>

@@ -74,22 +74,6 @@ import routers, { RouterConfig } from './routerConfigs';
 
 const renderRoutes = (routes: RouterConfig[]) => {
     return routes.map((route: RouterConfig) => {
-        if (route.auth) {
-            if (!localStorage.getItem('name')) {
-                return (
-                    <Route
-                        children={({ match }) =>
-                            match ? (
-                                <Navigate to="/login"></Navigate>
-                            ) : (
-                                <Navigate to="/login"></Navigate>
-                            )
-                        }
-                    ></Route>
-                );
-            }
-        }
-
         if (route.routes && route.routes.length > 0) {
             return (
                 <Route

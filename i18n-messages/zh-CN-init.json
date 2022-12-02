@@ -1,0 +1,3478 @@
+[
+	{
+		"id": "aa2fb1b6cffd7c9783c11047adcdbae4",
+		"defaultMessage": "请选择日期",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/AntDatePickerView/index.jsx#53#40"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#367#40"
+			}
+		]
+	},
+	{
+		"id": "625fb26b4b3340f7872b411f401e754c",
+		"defaultMessage": "取消",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/AntDatePickerView/index.jsx#74#78"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#423#78"
+			}
+		]
+	},
+	{
+		"id": "38cf16f2204ffab8a6e0187070558721",
+		"defaultMessage": "确定",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/AntDatePickerView/index.jsx#77#72"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#426#72"
+			}
+		]
+	},
+	{
+		"id": "eab1293c98ed5068dfa21a2507603f2b",
+		"defaultMessage": "个人信息",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/CompatiblePage.jsx#10#8"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/index.jsx#136#8"
+			}
+		]
+	},
+	{
+		"id": "9f8c92479295f4f1b473ce48cf1e5cb8",
+		"defaultMessage": "抱歉，页面异常，请重启应用",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/CompatiblePage.jsx#17#10"
+			}
+		]
+	},
+	{
+		"id": "5366b3b076936028c689a98cf2bb20d9",
+		"defaultMessage": "昵称不可用，请重新输入",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/Modal/SetNameModal.jsx#34#8"
+			}
+		]
+	},
+	{
+		"id": "8183debd0652bf1d859b30a8269f7bf1",
+		"defaultMessage": "无网页面",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/NonetPage.tsx#53#8"
+			}
+		]
+	},
+	{
+		"id": "75caa1cd8733aaab71cae774d55872ee",
+		"defaultMessage": "当前网络不可用",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/NonetPage.tsx#60#10"
+			}
+		]
+	},
+	{
+		"id": "64ca9bab920a2983bcf270320d850d00",
+		"defaultMessage": "重新加载",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/components/NonetPage.tsx#61#10"
+			}
+		]
+	},
+	{
+		"id": "c3f6b1963edafba1feafc28106c8e227",
+		"defaultMessage": "客厅",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/mock/data.js#10#60"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/data.js#10#60"
+			}
+		]
+	},
+	{
+		"id": "749e19ca5c6a67d2907af55f8b6a2ff1",
+		"defaultMessage": "卧室",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/mock/data.js#11#61"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/data.js#11#61"
+			}
+		]
+	},
+	{
+		"id": "5d2f2291b1d20574f13d8729913ce462",
+		"defaultMessage": "Leon的家",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/mock/data.js#19#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/data.js#19#4"
+			}
+		]
+	},
+	{
+		"id": "7411ce25807d5ca95bd4f82b9c90a41d",
+		"defaultMessage": "爸妈的家",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/mock/data.js#25#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/data.js#25#4"
+			}
+		]
+	},
+	{
+		"id": "2cdacb94c2aa2304614a5345c54a52ed",
+		"defaultMessage": "女王",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/mock/data.js#34#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/data.js#34#4"
+			}
+		]
+	},
+	{
+		"id": "b1dae9bc5cabbc13e4bee21af11cdb8d",
+		"defaultMessage": "管理员",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/mock/data.js#35#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/data.js#35#4"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#271#52"
+			}
+		]
+	},
+	{
+		"id": "1133d7c9e7bec74eefd8332feb0d8a30",
+		"defaultMessage": "老张",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/mock/data.js#39#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/data.js#39#4"
+			}
+		]
+	},
+	{
+		"id": "ab5dea29793d933fa7b5487a7309df6a",
+		"defaultMessage": "成员",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/mock/data.js#40#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/data.js#40#4"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#279#22"
+			}
+		]
+	},
+	{
+		"id": "a8e56248e6af321cd989f97420bfa01a",
+		"defaultMessage": "北京市",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/address.js#39#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#157#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/utils/xiaoai-miui.js#16#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/utils/xiaoai-miui.js#18#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/utils/xiaoai-mock.js#40#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/utils/xiaoai-mock.js#42#6"
+			}
+		]
+	},
+	{
+		"id": "692e92669c0ca340eff4fdcef32896ee",
+		"defaultMessage": "北京",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/address.js#41#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#159#6"
+			}
+		]
+	},
+	{
+		"id": "7a8941058aaf4df5147042ce104568da",
+		"defaultMessage": "周杰伦",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#13#8"
+			}
+		]
+	},
+	{
+		"id": "0eba536016789c6fe56ba1e0a808d2cb",
+		"defaultMessage": "筷子兄弟",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#19#8"
+			}
+		]
+	},
+	{
+		"id": "419c38198e7c5f52da32f23761a9e7ff",
+		"defaultMessage": "宗次郎",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#24#8"
+			}
+		]
+	},
+	{
+		"id": "3b9fc2e591c3d022e15d4377f36aa9ce",
+		"defaultMessage": "李宗盛",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#29#8"
+			}
+		]
+	},
+	{
+		"id": "8fccbf2dbaf0d3b8a486f385cce4f803",
+		"defaultMessage": "邓丽君",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#34#8"
+			}
+		]
+	},
+	{
+		"id": "07d668469b33073276c2d29829a4f655",
+		"defaultMessage": "毛不易",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#39#8"
+			}
+		]
+	},
+	{
+		"id": "c6b08fe8916e95b4d0cd85a03a66fa0b",
+		"defaultMessage": "林俊杰",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#45#8"
+			}
+		]
+	},
+	{
+		"id": "cbec86fbcc1c453633f835c10c9db0ee",
+		"defaultMessage": "周深",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#51#8"
+			}
+		]
+	},
+	{
+		"id": "eef38c55b37f389147e1baf6e48fb794",
+		"defaultMessage": "许嵩",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#56#8"
+			}
+		]
+	},
+	{
+		"id": "4301e01329a5fd57d7054420db403b1e",
+		"defaultMessage": "刀郎",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#62#8"
+			}
+		]
+	},
+	{
+		"id": "1028af51a60484c7523c3c52755984af",
+		"defaultMessage": "刘若英",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#68#8"
+			}
+		]
+	},
+	{
+		"id": "7dd119ebf8a3a7c2c9096ce78536af41",
+		"defaultMessage": "凤凰传奇",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#73#8"
+			}
+		]
+	},
+	{
+		"id": "90979b23f156b1751fb15675cb38cf78",
+		"defaultMessage": "刘德华",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#79#8"
+			}
+		]
+	},
+	{
+		"id": "4490987f13fe3cebaa4da6ccd732e9e7",
+		"defaultMessage": "任贤齐",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#84#8"
+			}
+		]
+	},
+	{
+		"id": "1c5a6ec016b913f7b1cfb971f2f97563",
+		"defaultMessage": "许巍",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#89#8"
+			}
+		]
+	},
+	{
+		"id": "5e31e77e6c9aeb4f665f9909afdb1d20",
+		"defaultMessage": "花粥",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#94#8"
+			}
+		]
+	},
+	{
+		"id": "0b73a38abadd1b4d6d90e5d65811fd0f",
+		"defaultMessage": "梁静茹",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#99#8"
+			}
+		]
+	},
+	{
+		"id": "d74ec2c362f93f8e87ba9ec744e26c24",
+		"defaultMessage": "海来阿木",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#105#8"
+			}
+		]
+	},
+	{
+		"id": "129061a45be0043eac553947747459c2",
+		"defaultMessage": "儿歌",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#116#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#140#8"
+			}
+		]
+	},
+	{
+		"id": "9949600a0dbf198669c81e8542269c43",
+		"defaultMessage": "古典音乐",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#117#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#141#8"
+			}
+		]
+	},
+	{
+		"id": "6fc01ace9fa0d5d6e707fb8ed342390e",
+		"defaultMessage": "流行",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#118#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#142#8"
+			}
+		]
+	},
+	{
+		"id": "41782238ead1c24585d041f7dc50294b",
+		"defaultMessage": "摇滚",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#119#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#143#8"
+			}
+		]
+	},
+	{
+		"id": "c32f9bc79881bda7a025beb275944821",
+		"defaultMessage": "黄梅戏",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#120#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#144#8"
+			}
+		]
+	},
+	{
+		"id": "b0a65b92f0fdd4c87a0f58b2eac10111",
+		"defaultMessage": "电子",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#121#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#145#8"
+			}
+		]
+	},
+	{
+		"id": "7b2dbab399a1c18bcb5014126ba98dc6",
+		"defaultMessage": "民谣",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#122#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#147#8"
+			}
+		]
+	},
+	{
+		"id": "fddef3e1c7290a865f4ec9c88961834d",
+		"defaultMessage": "嘻哈",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#123#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#148#8"
+			}
+		]
+	},
+	{
+		"id": "b2bc63e38405dcde94a2adcbfa510362",
+		"defaultMessage": "爵士",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#124#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#149#8"
+			}
+		]
+	},
+	{
+		"id": "0f8e7cfd2e4b2a8101d8e92faf0ea924",
+		"defaultMessage": "街舞",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#125#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#150#8"
+			}
+		]
+	},
+	{
+		"id": "cab29bf34bdac594894a04f24f8c9d30",
+		"defaultMessage": "蓝调",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#126#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#151#8"
+			}
+		]
+	},
+	{
+		"id": "1eb4ce211fd9efa2fc6f998615f16ad6",
+		"defaultMessage": "乡村",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#127#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#152#8"
+			}
+		]
+	},
+	{
+		"id": "02576fba872ecb4998f60ca7c4af42ac",
+		"defaultMessage": "教堂音乐",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#128#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#153#8"
+			}
+		]
+	},
+	{
+		"id": "bbfe31db131906e9e07c4c0ad1b2ee06",
+		"defaultMessage": "拉丁",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#129#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#154#8"
+			}
+		]
+	},
+	{
+		"id": "ece1cd2341aaf94a9df3e785ced1b97a",
+		"defaultMessage": "芭蕾",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#130#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#155#8"
+			}
+		]
+	},
+	{
+		"id": "a958e72674a7018c4910d71d8bff6c81",
+		"defaultMessage": "古风",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#131#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#156#8"
+			}
+		]
+	},
+	{
+		"id": "13b0681b64c072d5eb290228327cac9a",
+		"defaultMessage": "河北梆子",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#132#6"
+			}
+		]
+	},
+	{
+		"id": "a00b1884ff61ebc2a8ac4a677dd6cb1f",
+		"defaultMessage": "评剧",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#133#6"
+			}
+		]
+	},
+	{
+		"id": "3bb4c3937ee0f0a5c48d589d2dfaf775",
+		"defaultMessage": "中国戏曲",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#134#6"
+			}
+		]
+	},
+	{
+		"id": "405c15c4423cc61b907e7dfc3157e4b1",
+		"defaultMessage": "豫剧",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#135#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#158#8"
+			}
+		]
+	},
+	{
+		"id": "2e9ac44e9c1ee827c69b50fea06eaf14",
+		"defaultMessage": "中国风",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/models/music.js#136#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#160#8"
+			}
+		]
+	},
+	{
+		"id": "de3c55c52d6763076c1548d4d2495a0d",
+		"defaultMessage": "常用地址",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/index.jsx#36#8"
+			}
+		]
+	},
+	{
+		"id": "a6cdd2a00bc8557f94665a0422a54329",
+		"defaultMessage": "家",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/index.jsx#45#10"
+			}
+		]
+	},
+	{
+		"id": "41716f87c3755bab459a2cbc7219e60c",
+		"defaultMessage": "公司",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/index.jsx#56#10"
+			}
+		]
+	},
+	{
+		"id": "30f82ac2bb1c55fc2fadb9020b71470d",
+		"defaultMessage": "以上地址信息在语音导航回家或导航去公司时使用",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/index.jsx#67#36"
+			}
+		]
+	},
+	{
+		"id": "fbf6a252c0e5a1462cf09027effe4493",
+		"defaultMessage": "小区/写字楼/学校",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/SetAddress/index.jsx#239#12"
+			}
+		]
+	},
+	{
+		"id": "715b514147d934e02270074314a5e444",
+		"defaultMessage": "已设置地址",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/SetAddress/index.jsx#248#12"
+			}
+		]
+	},
+	{
+		"id": "8ae7f8552a136cff89a33632b4badba5",
+		"defaultMessage": "智能推荐地址",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/SetAddress/index.jsx#256#12"
+			}
+		]
+	},
+	{
+		"id": "f7d29dfae05b5d049b64b040b14d9a00",
+		"defaultMessage": "城市",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/SetCity/index.jsx#99#8"
+			}
+		]
+	},
+	{
+		"id": "72e3d2d3190e0e64dce7a2fb97623c09",
+		"defaultMessage": "当前选择城市：",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/SetCity/index.jsx#109#40"
+			}
+		]
+	},
+	{
+		"id": "463c427e79b1a6f30c77919eda247368",
+		"defaultMessage": "定位中",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/SetCity/positionIcon.jsx#14#52"
+			}
+		]
+	},
+	{
+		"id": "a10fa763d201cd93780e515f1ac9a28d",
+		"defaultMessage": "定位",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Address/SetCity/positionIcon.jsx#21#24"
+			}
+		]
+	},
+	{
+		"id": "04838f18913c926cba9ccaeb2237fbbf",
+		"defaultMessage": "我的纪念日",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/index.jsx#100#10"
+			}
+		]
+	},
+	{
+		"id": "ea159b3435e18403642253b64f339ae0",
+		"defaultMessage": "你还没有创建纪念日哟~",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/index.jsx#111#20"
+			}
+		]
+	},
+	{
+		"id": "711c625499962715beacf39be96724c1",
+		"defaultMessage": "纪念日(",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/index.jsx#116#57"
+			}
+		]
+	},
+	{
+		"id": "d4d8ad476a6f24a36e0cdb13cbb58550",
+		"defaultMessage": "*临近纪念日时，小爱会提醒你并提供贺卡和礼物建议",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/index.jsx#131#39"
+			}
+		]
+	},
+	{
+		"id": "fba5744d6c97e050f9ade719cbbae88a",
+		"defaultMessage": "添加纪念日",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/index.jsx#137#10"
+			}
+		]
+	},
+	{
+		"id": "02d9819ddaaaeb1b7b22b12608c7e5ca",
+		"defaultMessage": "提示",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/index.jsx#143#10"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/index.jsx#111#10"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/index.jsx#101#10"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#187#10"
+			}
+		]
+	},
+	{
+		"id": "a4b983f65f625a19e2576fd9790d0a91",
+		"defaultMessage": "确定要删除该纪念日吗？",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/index.jsx#144#10"
+			}
+		]
+	},
+	{
+		"id": "1622dc9b6b57a5faf337b87b13fc1200",
+		"defaultMessage": "未知",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/RadioCard.jsx#41#8"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/RadioCard.jsx#42#8"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#52#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#38#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#30#4"
+			}
+		]
+	},
+	{
+		"id": "3edddd85ac2c5e612fb71dbb89e7d1c5",
+		"defaultMessage": "日",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#231#4"
+			}
+		]
+	},
+	{
+		"id": "7941da94db2a83c04d0d85ee45ecb1e3",
+		"defaultMessage": "一",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#232#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#97#4"
+			}
+		]
+	},
+	{
+		"id": "2d8be272c9e78713e31e5c0c165422bb",
+		"defaultMessage": "二",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#233#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#260#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#98#4"
+			}
+		]
+	},
+	{
+		"id": "e662ff59a0da04db4f9323b6b6197015",
+		"defaultMessage": "三",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#234#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#261#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#99#4"
+			}
+		]
+	},
+	{
+		"id": "21716cf311071e8d339b611c8bdce9e4",
+		"defaultMessage": "四",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#235#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#262#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#100#4"
+			}
+		]
+	},
+	{
+		"id": "1fcc29d077c043016d325c68d328187f",
+		"defaultMessage": "五",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#236#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#263#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#101#4"
+			}
+		]
+	},
+	{
+		"id": "61b453523d86ac98afd3c98bdf1b0f9d",
+		"defaultMessage": "六",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#237#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#264#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#102#4"
+			}
+		]
+	},
+	{
+		"id": "aad6914f8f4e0871030b7c6814f752e6",
+		"defaultMessage": "七",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#238#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#265#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#103#4"
+			}
+		]
+	},
+	{
+		"id": "edf1acd5c6576c6d0eac12a8127b3830",
+		"defaultMessage": "八",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#239#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#266#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#104#4"
+			}
+		]
+	},
+	{
+		"id": "9b4851f85d53f5b6117f5ad823d1e18c",
+		"defaultMessage": "九",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#240#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#267#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#105#4"
+			}
+		]
+	},
+	{
+		"id": "181245720b7774e764cf1000e569d5d2",
+		"defaultMessage": "十",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#241#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#250#20"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#268#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#93#27"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#106#4"
+			}
+		]
+	},
+	{
+		"id": "cca7977f4a2f0b8f9075fca42d7a57cc",
+		"defaultMessage": "初",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#250#10"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#93#17"
+			}
+		]
+	},
+	{
+		"id": "c01e036b79d678dba8347cb15543fa09",
+		"defaultMessage": "廿",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#250#30"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#93#37"
+			}
+		]
+	},
+	{
+		"id": "758219aabd6ed334986dbbee28fc65c0",
+		"defaultMessage": "卅",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#250#40"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#93#47"
+			}
+		]
+	},
+	{
+		"id": "0f756c3fad32e4bf2d50357afceaf678",
+		"defaultMessage": "正",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#259#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#96#4"
+			}
+		]
+	},
+	{
+		"id": "5d6e3b1dd1694c7531750996e5e9094a",
+		"defaultMessage": "冬",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#269#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#107#4"
+			}
+		]
+	},
+	{
+		"id": "13b42090ed85314ce61e94d8bc9defa0",
+		"defaultMessage": "腊",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/calendar.js#270#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#108#4"
+			}
+		]
+	},
+	{
+		"id": "f14977e54d9e57ca4649eb5036b5e787",
+		"defaultMessage": "正月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#15#4"
+			}
+		]
+	},
+	{
+		"id": "b61c626886430a4acd373923dc529d8c",
+		"defaultMessage": "二月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#16#4"
+			}
+		]
+	},
+	{
+		"id": "eade91dc002fb276234cefd4797f14f5",
+		"defaultMessage": "三月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#17#4"
+			}
+		]
+	},
+	{
+		"id": "5178fda8e7cb6387857aee58d0f4421c",
+		"defaultMessage": "四月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#18#4"
+			}
+		]
+	},
+	{
+		"id": "cd474e412550648feb12ca4d403a92f0",
+		"defaultMessage": "五月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#19#4"
+			}
+		]
+	},
+	{
+		"id": "dc71b73f68d6da2249821b6286607fc4",
+		"defaultMessage": "六月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#20#4"
+			}
+		]
+	},
+	{
+		"id": "328dcec7ed9cbefbf25f6b0e8705bd0b",
+		"defaultMessage": "七月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#21#4"
+			}
+		]
+	},
+	{
+		"id": "b7263939aca94fe05e8e1a59988acc93",
+		"defaultMessage": "八月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#22#4"
+			}
+		]
+	},
+	{
+		"id": "cd9559ebaf7c4a24306825fff379f9c3",
+		"defaultMessage": "九月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#23#4"
+			}
+		]
+	},
+	{
+		"id": "ade2e82d676a35f2bb8246543d3c679d",
+		"defaultMessage": "十月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#24#4"
+			}
+		]
+	},
+	{
+		"id": "f8d083811e23773085e617e900ae6238",
+		"defaultMessage": "冬月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#25#4"
+			}
+		]
+	},
+	{
+		"id": "b4c8740ed328994833a97d084206684c",
+		"defaultMessage": "腊月",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#26#4"
+			}
+		]
+	},
+	{
+		"id": "5c5c546cba106b90c01cd7e386fc76bf",
+		"defaultMessage": "初一",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#30#4"
+			}
+		]
+	},
+	{
+		"id": "b596343d9044cc163dacd64d13856e8d",
+		"defaultMessage": "初二",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#31#4"
+			}
+		]
+	},
+	{
+		"id": "918b5a5b755c7a94c27490e3beefd747",
+		"defaultMessage": "初三",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#32#4"
+			}
+		]
+	},
+	{
+		"id": "f2109cee916d7e57e42a11c664bea8d2",
+		"defaultMessage": "初四",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#33#4"
+			}
+		]
+	},
+	{
+		"id": "97cd11e5e31106ab26449bbb42a46371",
+		"defaultMessage": "初五",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#34#4"
+			}
+		]
+	},
+	{
+		"id": "467c0574c9e4c2ba04481e5a24aca9b5",
+		"defaultMessage": "初六",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#35#4"
+			}
+		]
+	},
+	{
+		"id": "2759c9ca385ab609c8bfe832d0bc41fb",
+		"defaultMessage": "初七",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#36#4"
+			}
+		]
+	},
+	{
+		"id": "82f88a0f3b82370950b257db7c2ec2cc",
+		"defaultMessage": "初八",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#37#4"
+			}
+		]
+	},
+	{
+		"id": "a7d6464a2ae8d4f50e8a2d6449054d74",
+		"defaultMessage": "初九",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#38#4"
+			}
+		]
+	},
+	{
+		"id": "b8c3c1abfe4db289e80dbddbb6d3afc2",
+		"defaultMessage": "初十",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#39#4"
+			}
+		]
+	},
+	{
+		"id": "6863d827d8ebcaf3388ea2fb4c3745d9",
+		"defaultMessage": "十一",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#40#4"
+			}
+		]
+	},
+	{
+		"id": "c04fc25ea74f3266b1a1c772837a1d32",
+		"defaultMessage": "十二",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#41#4"
+			}
+		]
+	},
+	{
+		"id": "4a1cecc8381860a57bd1981034869610",
+		"defaultMessage": "十三",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#42#4"
+			}
+		]
+	},
+	{
+		"id": "a9019bd013cf87fb6937eb464116dc4d",
+		"defaultMessage": "十四",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#43#4"
+			}
+		]
+	},
+	{
+		"id": "5260c1f7010917bc35fa24a78826b82a",
+		"defaultMessage": "十五",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#44#4"
+			}
+		]
+	},
+	{
+		"id": "f15bd14b07fa6bd94e2b83cc5e04327c",
+		"defaultMessage": "十六",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#45#4"
+			}
+		]
+	},
+	{
+		"id": "f44be04f47cb5264b5710e8eee86b69f",
+		"defaultMessage": "十七",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#46#4"
+			}
+		]
+	},
+	{
+		"id": "83b67cd817c82364413d0794fd7dfd66",
+		"defaultMessage": "十八",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#47#4"
+			}
+		]
+	},
+	{
+		"id": "be192d36ebd87869d3d8db3fd7d75d54",
+		"defaultMessage": "十九",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#48#4"
+			}
+		]
+	},
+	{
+		"id": "39f55a21ebc6a1af613cdbbc33f3161e",
+		"defaultMessage": "二十",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#49#4"
+			}
+		]
+	},
+	{
+		"id": "7788f6d325660a18c398eb4da9d3edbe",
+		"defaultMessage": "廿一",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#50#4"
+			}
+		]
+	},
+	{
+		"id": "83ae5793b48dae1dba3c3c7cf0282b4e",
+		"defaultMessage": "廿二",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#51#4"
+			}
+		]
+	},
+	{
+		"id": "24c5408dcb19dd1dc4a5b22a7a8ea44f",
+		"defaultMessage": "廿三",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#52#4"
+			}
+		]
+	},
+	{
+		"id": "e724d27f30724b57dc333208a1675cec",
+		"defaultMessage": "廿四",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#53#4"
+			}
+		]
+	},
+	{
+		"id": "e0fe4bf102d0fb0f8db39191caf36174",
+		"defaultMessage": "廿五",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#54#4"
+			}
+		]
+	},
+	{
+		"id": "79a424be41c22d7a4963a2510d674fb4",
+		"defaultMessage": "廿六",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#55#4"
+			}
+		]
+	},
+	{
+		"id": "bb246c7142ffe26c3bc6d5c25afbda12",
+		"defaultMessage": "廿七",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#56#4"
+			}
+		]
+	},
+	{
+		"id": "c2b09bcadb772f802e5a96dd6b081bfd",
+		"defaultMessage": "廿八",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#57#4"
+			}
+		]
+	},
+	{
+		"id": "30ad4d659a8cf1fd1e72bbbb74750de9",
+		"defaultMessage": "廿九",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#58#4"
+			}
+		]
+	},
+	{
+		"id": "74968da48b50bfeb6130ee281fd3d900",
+		"defaultMessage": "三十",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#59#4"
+			}
+		]
+	},
+	{
+		"id": "861a3ac99697215f6819a3712d47b9df",
+		"defaultMessage": "农历",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#398#18"
+			}
+		]
+	},
+	{
+		"id": "8195b801c5b236f084c9caed026cc68d",
+		"defaultMessage": "输入年份",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/DatePickView/index.jsx#411#18"
+			}
+		]
+	},
+	{
+		"id": "23eb0e6024b9c5e694c18344887c4fe7",
+		"defaultMessage": "昵称",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#43#14"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#227#12"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#251#12"
+			}
+		]
+	},
+	{
+		"id": "8438e35217b8cda2b6e3cbedab3acf5f",
+		"defaultMessage": "请输入寿星昵称",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#43#27"
+			}
+		]
+	},
+	{
+		"id": "d7ec2d3fea4756bc1642e0f10c180cf5",
+		"defaultMessage": "名称",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#44#13"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#45#16"
+			}
+		]
+	},
+	{
+		"id": "984da4e6c1f1fe2ba10db1d6fbe767f7",
+		"defaultMessage": "请输入纪念日名称",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#44#26"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#45#29"
+			}
+		]
+	},
+	{
+		"id": "d8782fd1b868be35ff7dd382a2326f55",
+		"defaultMessage": "保密",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#211#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#236#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#537#16"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#2#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#2#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#2#2"
+			}
+		]
+	},
+	{
+		"id": "6ef23b4b8d7d2f7b7dc3d5b1ba9afaa1",
+		"defaultMessage": "包含不和谐词汇，请修改后再提交吧",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#255#8"
+			}
+		]
+	},
+	{
+		"id": "fe2d26a257d6986d3163fa0ee089c401",
+		"defaultMessage": "未设置",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#391#8"
+			}
+		]
+	},
+	{
+		"id": "acbceaca9d676e5bc32b3a7e7bc77741",
+		"defaultMessage": "领证纪念日",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#404#12"
+			}
+		]
+	},
+	{
+		"id": "6cb05fa3761356034e5e4da12fd33efe",
+		"defaultMessage": "相识纪念日",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#404#21"
+			}
+		]
+	},
+	{
+		"id": "f42ceb1214c3c49f1485d1533e2ae74f",
+		"defaultMessage": "订婚纪念日",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#404#30"
+			}
+		]
+	},
+	{
+		"id": "802800691282e7496c3350af1f389311",
+		"defaultMessage": "您可以填写：",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#494#53"
+			}
+		]
+	},
+	{
+		"id": "eefd831645b66f7168b6575192b36bf0",
+		"defaultMessage": "关系",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#505#16"
+			}
+		]
+	},
+	{
+		"id": "4ff1e74e43a3586339251494117185ad",
+		"defaultMessage": "日期",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#514#14"
+			}
+		]
+	},
+	{
+		"id": "916ff9eddd8273146ca88428be2f3ffa",
+		"defaultMessage": "请输入昵称",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#530#12"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#22#8"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#119#12"
+			}
+		]
+	},
+	{
+		"id": "26eeade07d2a919662bfd2fd8f992ec3",
+		"defaultMessage": "请输入主题",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#555#12"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#557#12"
+			}
+		]
+	},
+	{
+		"id": "48425cebb841bd7d77100ac1168fa1d1",
+		"defaultMessage": "请选择寿星与你的关系",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/index.jsx#575#12"
+			}
+		]
+	},
+	{
+		"id": "8483ed132b2c3b7ea48f28ef5258845a",
+		"defaultMessage": "生日",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/Radio.jsx#9#4"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#241#12"
+			}
+		]
+	},
+	{
+		"id": "d702bf3cfc810ed64cef549e7fce0577",
+		"defaultMessage": "恋爱纪念",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/Radio.jsx#17#4"
+			}
+		]
+	},
+	{
+		"id": "f57ce9bbaea631f5ce6884b4399f2b21",
+		"defaultMessage": "结婚纪念",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/Radio.jsx#25#4"
+			}
+		]
+	},
+	{
+		"id": "f1d4ff50f3828f9b73412e7d94e6dd6e",
+		"defaultMessage": "自定义",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/Radio.jsx#33#4"
+			}
+		]
+	},
+	{
+		"id": "6c6d1878f27145cb48ab5a2bbde9165e",
+		"defaultMessage": "本人",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#3#2"
+			}
+		]
+	},
+	{
+		"id": "b23382279833a24ed89613d6eea63469",
+		"defaultMessage": "父母",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#4#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#4#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#4#2"
+			}
+		]
+	},
+	{
+		"id": "7c1576405cb52c82c721ab455d6e8096",
+		"defaultMessage": "伴侣",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#5#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#5#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#5#2"
+			}
+		]
+	},
+	{
+		"id": "84e10d4273fbf2abd8aff596b6e400c0",
+		"defaultMessage": "子女",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#6#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#6#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#6#2"
+			}
+		]
+	},
+	{
+		"id": "9d53230a9593589f9d04134b05157b76",
+		"defaultMessage": "朋友",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#7#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#7#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#7#2"
+			}
+		]
+	},
+	{
+		"id": "4b59787d1dd5d2e68a7adbcc36d26862",
+		"defaultMessage": "亲人",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#8#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#8#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#8#2"
+			}
+		]
+	},
+	{
+		"id": "1f888438cefe509dbc6bc2acc5642cbc",
+		"defaultMessage": "同学",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#9#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#9#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#9#2"
+			}
+		]
+	},
+	{
+		"id": "3a1ff305f35c34f8172467e43d42484d",
+		"defaultMessage": "同事",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#10#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#10#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#10#2"
+			}
+		]
+	},
+	{
+		"id": "918d0f8ecb9ed9fbfb6bac2a9be18db5",
+		"defaultMessage": "我、本人、自己",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#14#2"
+			}
+		]
+	},
+	{
+		"id": "3fc2d8ec131063370dadb05f8b656727",
+		"defaultMessage": "爸爸、妈妈、老爸、老妈、妈咪、公公、婆婆",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#15#2"
+			}
+		]
+	},
+	{
+		"id": "5c54d88a87f58839275260d8d01c0130",
+		"defaultMessage": "老公、老婆、女朋友、男朋友",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#16#2"
+			}
+		]
+	},
+	{
+		"id": "3e6b1f61ddd110b7ffc9c6fc27e57024",
+		"defaultMessage": "儿子、女儿",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#17#2"
+			}
+		]
+	},
+	{
+		"id": "12dd3d64750cdfea3fa5ba9f18be522d",
+		"defaultMessage": "爷爷、奶奶、外公、外婆、舅舅、弟弟、妹妹、哥哥、姐姐、姑姑、姨娘、姨夫",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Anniversary/SetAnniversary/tool.js#18#2"
+			}
+		]
+	},
+	{
+		"id": "36a4908a557796858a347c063a73ce60",
+		"defaultMessage": "男",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#39#4"
+			}
+		]
+	},
+	{
+		"id": "87c835a6b1749374a7524a596087b296",
+		"defaultMessage": "女",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#43#4"
+			}
+		]
+	},
+	{
+		"id": "aea276c2c70f8b43ab6d8bbbda005ef1",
+		"defaultMessage": "添加儿童信息，推荐最合适的儿童内容",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#225#38"
+			}
+		]
+	},
+	{
+		"id": "787b5677e325beec788727cd1a327f1f",
+		"defaultMessage": "性别",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#234#12"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#264#12"
+			}
+		]
+	},
+	{
+		"id": "791fd55d5eccd0006c293c4ab1c6b131",
+		"defaultMessage": "名字最多可输入12个字",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/AddChild/index.jsx#253#12"
+			}
+		]
+	},
+	{
+		"id": "6eaea9a830c572783c6c18bee409f903",
+		"defaultMessage": "儿童信息",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/index.jsx#74#21"
+			}
+		]
+	},
+	{
+		"id": "8e0d8fbd9c9fa292f5d800c5396ecd02",
+		"defaultMessage": "还未添加儿童信息",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/index.jsx#78#42"
+			}
+		]
+	},
+	{
+		"id": "7529c082171f25268dad2f62f8a7d96b",
+		"defaultMessage": "添加新成员",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/index.jsx#103#10"
+			}
+		]
+	},
+	{
+		"id": "74a1619799bbfe587937628ae8911859",
+		"defaultMessage": "确定要删除该儿童信息吗？",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Children/index.jsx#112#10"
+			}
+		]
+	},
+	{
+		"id": "c36b02b1bf57ea72a7d1af8958da0fa4",
+		"defaultMessage": "绑定手机号",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/BindPhone/index.jsx#127#21"
+			}
+		]
+	},
+	{
+		"id": "6e4f4b3329799f539ee6b9064370e7be",
+		"defaultMessage": "请输入手机号",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/BindPhone/index.jsx#131#14"
+			}
+		]
+	},
+	{
+		"id": "a4348dd68d24f019ce9ec6d831261ab2",
+		"defaultMessage": "6位验证码",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/BindPhone/index.jsx#138#16"
+			}
+		]
+	},
+	{
+		"id": "f7e92d3c4f3af4c7cbd2884f07f1bb1b",
+		"defaultMessage": "你的手机号只会被用来查询快递物流信息，不会用作其他用途。",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/BindPhone/index.jsx#150#39"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/UnBindPhone/index.jsx#44#37"
+			}
+		]
+	},
+	{
+		"id": "f4f12c7a2c38440ac06aae42cce36673",
+		"defaultMessage": "绑定",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/BindPhone/index.jsx#157#12"
+			}
+		]
+	},
+	{
+		"id": "860077ba4244ded2284f7127f117be73",
+		"defaultMessage": "小米账号：",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/index.jsx#144#47"
+			}
+		]
+	},
+	{
+		"id": "22cf035e00b1595e2c1bfd9e8c9e468b",
+		"defaultMessage": "选择职业",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/index.jsx#193#14"
+			}
+		]
+	},
+	{
+		"id": "06caebf1aa1676797638d3cb9d327380",
+		"defaultMessage": "温馨提示：本页面上您填写的所有信息将用于小爱同学各产品（手机、音箱、平板）上为您提供服务哦",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/index.jsx#220#62"
+			}
+		]
+	},
+	{
+		"id": "0c105e7ca06001266131ab1c0c350bc1",
+		"defaultMessage": "自己",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#3#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/tool.js#3#2"
+			}
+		]
+	},
+	{
+		"id": "35d9969dfa48df5544b9a005ac4f3f92",
+		"defaultMessage": "学生",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#12#24"
+			}
+		]
+	},
+	{
+		"id": "d2fdf805396a888204e515b406324c2b",
+		"defaultMessage": "上班族",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#12#30"
+			}
+		]
+	},
+	{
+		"id": "0d98c74797e49d00bcc4c17c9d557a2b",
+		"defaultMessage": "其他",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#12#37"
+			}
+		]
+	},
+	{
+		"id": "2e16acd606760ba657d3f80977394ada",
+		"defaultMessage": "暂不填写",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/tool.js#12#43"
+			}
+		]
+	},
+	{
+		"id": "92448a35f41de3a1fa69135acfed5ce9",
+		"defaultMessage": "手机号码",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/UnBindPhone/index.jsx#42#21"
+			}
+		]
+	},
+	{
+		"id": "483f5aee524570109afabe105b4753cd",
+		"defaultMessage": "你当前绑定的手机号为：",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/UnBindPhone/index.jsx#43#45"
+			}
+		]
+	},
+	{
+		"id": "c7b01a47bb996a938ac0c96ed5d618c1",
+		"defaultMessage": "解除绑定",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Home/UnBindPhone/index.jsx#49#10"
+			}
+		]
+	},
+	{
+		"id": "c8d398d9c7618dabcb010750277339e3",
+		"defaultMessage": "家庭传声",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/index.jsx#50#8"
+			}
+		]
+	},
+	{
+		"id": "c8a228f68df33c3165a3ba754bfbf64a",
+		"defaultMessage": "没有任何可以传声的家庭设备",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/index.jsx#60#14"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#176#18"
+			}
+		]
+	},
+	{
+		"id": "e69c654eec1a4c45b0b20622a0f81583",
+		"defaultMessage": "权限设置",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/index.jsx#67#42"
+			}
+		]
+	},
+	{
+		"id": "482f6a40e9dc887be68c564723abf373",
+		"defaultMessage": "授权家庭成员使用",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/AsyncDialog/Dialog.jsx#59#27"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/AsyncDialog/index.jsx#44#57"
+			}
+		]
+	},
+	{
+		"id": "4ffa33e306a6de1c6859cc217644b4bc",
+		"defaultMessage": "授权声明",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/AsyncDialog/index.jsx#50#10"
+			}
+		]
+	},
+	{
+		"id": "1c237d8c5b7ed2fe436a4f5ae7743529",
+		"defaultMessage": "为向您提供家庭传声相关服务，我们需要获得您米家App中，家庭成员信息（包括成员头像、昵称和id）的授权，并且将此页面分享给您的家庭成员可见。",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/AsyncDialog/index.jsx#52#13"
+			}
+		]
+	},
+	{
+		"id": "c2a30c7aa623288166b11b4b130f0226",
+		"defaultMessage": "您的家庭成员需要在小米手机-设置-小爱同学-小爱实验室-家庭传声功能中，开启本机权限以在手机端使用家庭传声功能。如您或家庭成员不再使用此功能，可以在此路径的页面中关闭此功能。",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/AsyncDialog/index.jsx#55#13"
+			}
+		]
+	},
+	{
+		"id": "c85f101cc90c01a35c253c6ed5ca2d21",
+		"defaultMessage": "本机权限",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#186#43"
+			}
+		]
+	},
+	{
+		"id": "4d1636e43fcbea4c499eefc5555b3334",
+		"defaultMessage": "本机",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#189#24"
+			}
+		]
+	},
+	{
+		"id": "01ecfb4536b89e0ad53bd73811f13dc6",
+		"defaultMessage": "当前设备是否开通家庭传声功能",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#199#43"
+			}
+		]
+	},
+	{
+		"id": "9e932e234b1cd4f01a81cf5f5b9e2c6d",
+		"defaultMessage": "家庭设备权限",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#207#45"
+			}
+		]
+	},
+	{
+		"id": "1f598a452a5bb0c6496dcf5b59d36bdd",
+		"defaultMessage": "家中可传声设备是否开通家庭传声功能",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#238#45"
+			}
+		]
+	},
+	{
+		"id": "120066d2d95872ab5f7231b2f0af4cab",
+		"defaultMessage": "查看支持设备",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#243#25"
+			}
+		]
+	},
+	{
+		"id": "bec16aeb3331cd6d69f7637031a25d0c",
+		"defaultMessage": "免打扰设置",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#251#39"
+			}
+		]
+	},
+	{
+		"id": "2bc24513efecf15b42d5218a81172b3f",
+		"defaultMessage": "睡眠模式",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#254#20"
+			}
+		]
+	},
+	{
+		"id": "72bf4b12d02428d0df975bc2fb0358f6",
+		"defaultMessage": "在音箱电视端设置了睡眠模式后，若开启此开关，则在睡眠时间段内不会进行传声信息播报",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#265#39"
+			}
+		]
+	},
+	{
+		"id": "b7daee8d9378a38771c44b51af231d62",
+		"defaultMessage": "家庭成员",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#270#39"
+			}
+		]
+	},
+	{
+		"id": "bd302857f5a98671223b8ded7cc5d6b7",
+		"defaultMessage": "管理员可在米家-家庭管理-家庭成员中添加删除成员",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/index.jsx#290#62"
+			}
+		]
+	},
+	{
+		"id": "70fd6161daa46064141d3a6eeecfdbdf",
+		"defaultMessage": "当前版本尚未支持传声",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Intercom/SetIntercom/Item1.jsx#14#41"
+			}
+		]
+	},
+	{
+		"id": "ab0c9ba887585b1e2e532bc2cc6c0cf7",
+		"defaultMessage": "换一组",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/changeGroup/index.tsx#22#43"
+			}
+		]
+	},
+	{
+		"id": "f420833553ba20c0a8219d61f5ba0c5d",
+		"defaultMessage": "音乐偏好",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/index.jsx#11#19"
+			}
+		]
+	},
+	{
+		"id": "6e4943b0c8210451060342d7ef5dd3e5",
+		"defaultMessage": "喜欢的歌手",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/index.jsx#14#10"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/SetSinger/index.jsx#103#21"
+			}
+		]
+	},
+	{
+		"id": "6723a4907985bb511c0c78688173c4c0",
+		"defaultMessage": "喜欢的歌曲风格",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/index.jsx#21#10"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/SetSongStyle/index.jsx#113#21"
+			}
+		]
+	},
+	{
+		"id": "0e0b0ddfeb11cfc13d9b36c3da2deb47",
+		"defaultMessage": "换一批",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/SetSinger/index.jsx#125#18"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/SetSongStyle/index.jsx#139#18"
+			}
+		]
+	},
+	{
+		"id": "8b8ca66d68b4c3d6393f043089f79229",
+		"defaultMessage": "你喜欢听什么风格的歌曲？",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Music/SetSongStyle/index.jsx#115#42"
+			}
+		]
+	},
+	{
+		"id": "8347a927c09a4ec2fe473b0a93f667d0",
+		"defaultMessage": "修改",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#53#10"
+			}
+		]
+	},
+	{
+		"id": "e366ccf1556c0672dcecba135ed5472e",
+		"defaultMessage": "设置",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#23#8"
+			}
+		]
+	},
+	{
+		"id": "0a4b2a9a7d9cea808f5f3588edf2c695",
+		"defaultMessage": "我的昵称",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#78#10"
+			}
+		]
+	},
+	{
+		"id": "d80d2a9cf0e86aec38a01af73defce4a",
+		"defaultMessage": "删除昵称",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#98#16"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#104#10"
+			}
+		]
+	},
+	{
+		"id": "48d34b49c7ab24cb665818e66a013860",
+		"defaultMessage": "确定要删除该昵称吗？",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#105#10"
+			}
+		]
+	},
+	{
+		"id": "ffa35d14adb4d2a60da1f29765eb3485",
+		"defaultMessage": "修改昵称",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Nickname/index.jsx#117#12"
+			}
+		]
+	},
+	{
+		"id": "7729d3f6a67ab96fda92f7d751ff69b4",
+		"defaultMessage": "添加股票",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/AddStock/index.jsx#73#19"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/index.jsx#62#42"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/index.jsx#87#10"
+			}
+		]
+	},
+	{
+		"id": "7588421d27307f5d3fdd5008225fbebf",
+		"defaultMessage": "搜索股票",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/AddStock/index.jsx#75#23"
+			}
+		]
+	},
+	{
+		"id": "e5f71fc31e7246dd6ccc5539570471b0",
+		"defaultMessage": "搜索",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/AddStock/index.jsx#76#69"
+			}
+		]
+	},
+	{
+		"id": "b189550a0d1f8bf9c727d54b977a9628",
+		"defaultMessage": "已添加",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/AddStock/List/index.tsx#30#47"
+			}
+		]
+	},
+	{
+		"id": "5f7d9fa412225de50cc79a95297cd2c2",
+		"defaultMessage": "股票订阅",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/index.jsx#58#21"
+			}
+		]
+	},
+	{
+		"id": "1b8c505788036e6982868a54341461a8",
+		"defaultMessage": "问小爱“我的股票表现如何”",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Stock/index.jsx#64#22"
+			}
+		]
+	},
+	{
+		"id": "4d70af5c3afd03282591c3118bfd8cfa",
+		"defaultMessage": "车辆信息",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/AddCarInfo.jsx#175#10"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#139#46"
+			}
+		]
+	},
+	{
+		"id": "978b571438e591193e811c1e1506b0a7",
+		"defaultMessage": "新能源汽车",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/AddCarInfo.jsx#182#48"
+			}
+		]
+	},
+	{
+		"id": "188c235b5e5a7a6d58ea74a8723e6058",
+		"defaultMessage": "车牌号",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/AddCarInfo.jsx#188#12"
+			}
+		]
+	},
+	{
+		"id": "68ed29189dd73e8d330011cb1d8be883",
+		"defaultMessage": "车辆名称",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/AddCarInfo.jsx#195#12"
+			}
+		]
+	},
+	{
+		"id": "dd17277faab574a7a49a496361a33d51",
+		"defaultMessage": "设置车辆名称",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/AddCarInfo.jsx#213#12"
+			}
+		]
+	},
+	{
+		"id": "39633eeda9f2b267dd2a90184b3ee19f",
+		"defaultMessage": "请输入车辆名称",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/AddCarInfo.jsx#215#12"
+			}
+		]
+	},
+	{
+		"id": "fd4ec325ba1380199689abd652d979ff",
+		"defaultMessage": "12号线-2号线",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#12#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#34#6"
+			}
+		]
+	},
+	{
+		"id": "dd85aa9ceead1ca4e4d2028fee31c55a",
+		"defaultMessage": "1小时20分钟",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#13#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#18#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#23#4"
+			}
+		]
+	},
+	{
+		"id": "739db7c0a4ddd67620a92fd811c36fb4",
+		"defaultMessage": "步行200米",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#14#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#19#4"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#24#4"
+			}
+		]
+	},
+	{
+		"id": "6c9cf336e5e33878e9bd8d0259a741d7",
+		"defaultMessage": "12号线-2号线2",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#17#4"
+			}
+		]
+	},
+	{
+		"id": "b027010586217730e50d4daac998af45",
+		"defaultMessage": "12号线-2号线3",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#22#4"
+			}
+		]
+	},
+	{
+		"id": "5f3a858183668fcbb6972b54e5d46099",
+		"defaultMessage": "暂无合适的公交线路规划",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#68#10"
+			}
+		]
+	},
+	{
+		"id": "a7e587090c4abd35e76869dc51e95edf",
+		"defaultMessage": "添加常用地址后将为你规划公交线路",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#75#10"
+			}
+		]
+	},
+	{
+		"id": "d8e0f55d200c1f43af96ed9e0040ec4d",
+		"defaultMessage": "公交线路规划",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/BusRoutes.jsx#118#19"
+			}
+		]
+	},
+	{
+		"id": "a5d0a5439f6d7119115ea83284220c72",
+		"defaultMessage": "通勤时间",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/CommuteRoutes.jsx#229#71"
+			}
+		]
+	},
+	{
+		"id": "c02d3bd28fe14aefa3b2eab4d7b42d05",
+		"defaultMessage": "上班时间",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/CommuteRoutes.jsx#234#10"
+			}
+		]
+	},
+	{
+		"id": "557c1e61e5b8e827b3c193235dcd1783",
+		"defaultMessage": "下班时间",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/CommuteRoutes.jsx#240#10"
+			}
+		]
+	},
+	{
+		"id": "499974a6697b58fc1718a844f120fd12",
+		"defaultMessage": "出行信息",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#127#21"
+			}
+		]
+	},
+	{
+		"id": "e8beb10550b5eb24fd0f63b040e4ff6d",
+		"defaultMessage": "添加车辆",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#166#13"
+			}
+		]
+	},
+	{
+		"id": "1cfa5d373989fdad66c20bf2384f3e23",
+		"defaultMessage": "清空出行信息",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#180#15"
+			},
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#194#10"
+			}
+		]
+	},
+	{
+		"id": "5549eb0015cf922f76a1890fa85547b6",
+		"defaultMessage": "确定要删除该车辆信息吗？",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#188#10"
+			}
+		]
+	},
+	{
+		"id": "f8be586ca0c6a201a642e17b64896601",
+		"defaultMessage": "将清空全部出行信息，确定清空吗？",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#195#10"
+			}
+		]
+	},
+	{
+		"id": "288f0c404c4e546aa3683ff5054e85e2",
+		"defaultMessage": "清空",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/index.jsx#199#10"
+			}
+		]
+	},
+	{
+		"id": "eb3c99395357735305ad43db034e0275",
+		"defaultMessage": "京",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#12#2"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#71#11"
+			}
+		]
+	},
+	{
+		"id": "bcfa2926fdd49ac9cfc2ed05811d6f9c",
+		"defaultMessage": "津",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#13#2"
+			}
+		]
+	},
+	{
+		"id": "0f60d57b259b11dcddccfbb6d8379bd0",
+		"defaultMessage": "沪",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#14#2"
+			}
+		]
+	},
+	{
+		"id": "e74f901ef333f0e97c67b2b10ce807f6",
+		"defaultMessage": "渝",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#15#2"
+			}
+		]
+	},
+	{
+		"id": "d0e1b5dabe373ab32646216d9c64b756",
+		"defaultMessage": "冀",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#16#2"
+			}
+		]
+	},
+	{
+		"id": "bc8f358044e3777de75d3930039fa457",
+		"defaultMessage": "豫",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#17#2"
+			}
+		]
+	},
+	{
+		"id": "a45fb6bbf291a6e74cee70210a1fa9a1",
+		"defaultMessage": "云",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#18#2"
+			}
+		]
+	},
+	{
+		"id": "aa707f4b0ec4103f38cb516b2abf5592",
+		"defaultMessage": "辽",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#19#2"
+			}
+		]
+	},
+	{
+		"id": "9cba58579b62de99e77c2111f5ddb731",
+		"defaultMessage": "黑",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#20#2"
+			}
+		]
+	},
+	{
+		"id": "2571298d5b5c9f5f27b5e7044580bd15",
+		"defaultMessage": "湘",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#21#2"
+			}
+		]
+	},
+	{
+		"id": "7cf42613754f15760385a70352f6ee6d",
+		"defaultMessage": "皖",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#22#2"
+			}
+		]
+	},
+	{
+		"id": "60e18536374622d5c2c5e9d857eea546",
+		"defaultMessage": "鲁",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#23#2"
+			}
+		]
+	},
+	{
+		"id": "5a631c6c294ea7a0c08d79ad34cb74e3",
+		"defaultMessage": "新",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#24#2"
+			}
+		]
+	},
+	{
+		"id": "52d91cf514b0bfdf295ca42dc7a44562",
+		"defaultMessage": "苏",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#25#2"
+			}
+		]
+	},
+	{
+		"id": "b55501cad32c7e18b14d0e5d922a9ffc",
+		"defaultMessage": "浙",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#26#2"
+			}
+		]
+	},
+	{
+		"id": "5b212ba556d8d256426eaf7b20e8917b",
+		"defaultMessage": "赣",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#27#2"
+			}
+		]
+	},
+	{
+		"id": "e18cf52dc6957dc0c9727d5b4f0cf129",
+		"defaultMessage": "鄂",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#28#2"
+			}
+		]
+	},
+	{
+		"id": "386b7df337fc7ade8f1197f9a5648704",
+		"defaultMessage": "桂",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#29#2"
+			}
+		]
+	},
+	{
+		"id": "b561071c06d9750ddd2455c155f89c28",
+		"defaultMessage": "甘",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#30#2"
+			}
+		]
+	},
+	{
+		"id": "be1436a9472e0b6b4e09f6d9d208d8cf",
+		"defaultMessage": "晋",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#31#2"
+			}
+		]
+	},
+	{
+		"id": "5cac973cde17e8eef05a5e8726bb9447",
+		"defaultMessage": "蒙",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#32#2"
+			}
+		]
+	},
+	{
+		"id": "9bffd08cde00b46cac73eb9fa1770a99",
+		"defaultMessage": "陕",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#33#2"
+			}
+		]
+	},
+	{
+		"id": "cd45464d9deaf775b559f840220c6880",
+		"defaultMessage": "吉",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#34#2"
+			}
+		]
+	},
+	{
+		"id": "0660b9c25364b8206d94b8405aed0313",
+		"defaultMessage": "闽",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#35#2"
+			}
+		]
+	},
+	{
+		"id": "0a0f0a1307c50d2bf35bbd2f93b2aa85",
+		"defaultMessage": "贵",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#36#2"
+			}
+		]
+	},
+	{
+		"id": "e8394793135bc69dceda57c457bd0dad",
+		"defaultMessage": "粤",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#37#2"
+			}
+		]
+	},
+	{
+		"id": "1ca69c4be0f905492520aeda8f5df847",
+		"defaultMessage": "青",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#38#2"
+			}
+		]
+	},
+	{
+		"id": "b0122641237d650ea4881ab3a6662317",
+		"defaultMessage": "藏",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#39#2"
+			}
+		]
+	},
+	{
+		"id": "e130dbe0a5c25c0236cb60833d150f47",
+		"defaultMessage": "川",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#40#2"
+			}
+		]
+	},
+	{
+		"id": "eda5f98c9f0a574b25355aee0af83502",
+		"defaultMessage": "宁",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#41#2"
+			}
+		]
+	},
+	{
+		"id": "8a28f121d105a376046cc0d4d37c149a",
+		"defaultMessage": "琼",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#42#2"
+			}
+		]
+	},
+	{
+		"id": "e30ee10ab1786761102a891036822ef5",
+		"defaultMessage": "请输入正确的车牌号",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#89#6"
+			},
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#105#8"
+			}
+		]
+	},
+	{
+		"id": "3e4f9620163c9496f522eebdeb2dc9de",
+		"defaultMessage": "设置车牌号",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/LicenseModal.jsx#120#8"
+			}
+		]
+	},
+	{
+		"id": "f8fbeae19402928ea0909596e2bf896f",
+		"defaultMessage": "上午",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/TimeDialog.jsx#34#6"
+			}
+		]
+	},
+	{
+		"id": "e2eb289cc37550406f297815e5fd3271",
+		"defaultMessage": "下午",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/TimeDialog.jsx#38#6"
+			}
+		]
+	},
+	{
+		"id": "374ee82b6962ef9bfd40218cc186aaa5",
+		"defaultMessage": "公交",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/TravelPreference.jsx#19#4"
+			}
+		]
+	},
+	{
+		"id": "030114f95d81a6e170109487d581d444",
+		"defaultMessage": "驾车",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/TravelPreference.jsx#25#4"
+			}
+		]
+	},
+	{
+		"id": "0da4055f5fe93d6e08ac4ef9903303ac",
+		"defaultMessage": "步行",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/TravelPreference.jsx#31#4"
+			}
+		]
+	},
+	{
+		"id": "1d10f015515505c4ac23bde8f1d5332a",
+		"defaultMessage": "骑行",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/TravelPreference.jsx#37#4"
+			}
+		]
+	},
+	{
+		"id": "bebd29b623cf98826e1156b5e9a08787",
+		"defaultMessage": "打车",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/TravelPreference.jsx#43#4"
+			}
+		]
+	},
+	{
+		"id": "b19a5835a982529b35f06ddeed9df965",
+		"defaultMessage": "出行方式",
+		"source": [
+			{
+				"type": "jsx",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/routes/Travel/TravelPreference.jsx#130#44"
+			}
+		]
+	},
+	{
+		"id": "64e94e625256e86b5afba62b53027e80",
+		"defaultMessage": "迷幻",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#146#8"
+			}
+		]
+	},
+	{
+		"id": "7be26aa3de6d62f7e72edf8984c98bc6",
+		"defaultMessage": "京剧",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#157#8"
+			}
+		]
+	},
+	{
+		"id": "c72ed64cf6b557da07fb9f0570e02af5",
+		"defaultMessage": "越剧",
+		"source": [
+			{
+				"type": "text",
+				"location": "/Users/mcdong/fyx/ai-personal-info-fe/src/services/apiMock.js#159#8"
+			}
+		]
+	}
+]

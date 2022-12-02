@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 interface VisualViewportComponentProps {
     className?: string;
     style?: React.CSSProperties;
+    children?: any;
 }
 
 interface VisualViewportComponentState {

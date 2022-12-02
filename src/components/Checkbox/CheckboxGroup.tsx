@@ -13,6 +13,7 @@ export interface CheckboxGroupProps {
     options?: OptionsProps[] | string[];
     onChange?(...args): void;
     value?: string[] | number[];
+    children?: any;
 }
 
 export const GroupContext = React.createContext(null);

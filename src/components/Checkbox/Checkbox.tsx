@@ -13,6 +13,7 @@ interface CheckBoxProps {
     indeterminate?: boolean;
     value?: number | string;
     style?: React.CSSProperties;
+    children?: any;
 }
 
 const Checkbox: React.FC<CheckBoxProps> & { Group?: typeof CheckboxGroup } = ({
@@ -21,10 +22,10 @@ const Checkbox: React.FC<CheckBoxProps> & { Group?: typeof CheckboxGroup } = ({
     onChange,
     style,
     className,
-    children,
     value,
     indeterminate,
-    disabled
+    disabled,
+    ...props
 }) => {
     const [inchecked, setInChecked] = useState(checked);
     const context = useContext(GroupContext);
@@ -68,7 +69,7 @@ const Checkbox: React.FC<CheckBoxProps> & { Group?: typeof CheckboxGroup } = ({
                     type="checkbox"
                 />
             </span>
-            <span className="checkbox_label">{children || label}</span>
+            <span className="checkbox_label">{props.children || label}</span>
         </label>
     );
 };

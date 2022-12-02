@@ -12,6 +12,7 @@ interface RadioProps {
     disabled?: boolean;
     value?: number | string;
     style?: React.CSSProperties;
+    children?: any;
 }
 
 const Radio: React.FC<RadioProps> & { Group?: typeof RadioGroup } = ({

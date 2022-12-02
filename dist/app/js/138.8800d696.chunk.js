@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkinit_ts_new=self.webpackChunkinit_ts_new||[]).push([[138],{15138:(e,n,t)=>{t.r(n),t.d(n,{default:()=>u});t(2038);var s=t(67294);const u=function(){return s.createElement("div",null,"404")}}}]);

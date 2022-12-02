@@ -6,6 +6,7 @@ export interface DropDownProps {
     isOpened: boolean;
     dropdownClassName?: string;
     dropdownStyle?: React.CSSProperties;
+    children?: any;
 }
 
 const DropDown: React.FC<DropDownProps> = ({
